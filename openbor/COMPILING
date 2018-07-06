@@ -1,0 +1,79 @@
+------------------------- Compiling using your own SDK(s) -------------------------
+
+Requirements:  Linux (Ubuntu) If you are like me (S.X.) then you like to build your own environments!
+
+
+PSPSDK:   svn://ps2dev.org/psp/trunk/psptoolchain 
+          svn://ps2dev.org/psp/trunk/zlib 
+          svn://ps2dev.org/psp/trunk/libpng
+
+
+PS2SDK:   svn://ps2dev.org/ps2/trunk/ps2toolchain 
+          svn://ps2dev.org/ps2/trunk/zlib 
+          svn://ps2dev.org/ps2/trunk/libpng
+
+
+Open2X:   http://wiki.open2x.org/open2x/wiki/index.php 
+          Grab Toolchain 
+          Grab Prebuilt Libraries
+
+
+KOS:      http://sourceforge.net/projects/cadcdev/
+
+
+PS3:      Refer to Linux components.
+
+Linux:    Install neccessary SDL Components with Synaptic Package Manager
+          SDL-devel
+          SDL_gfx-devel 
+          SDL_mixer-devel 
+          SDL_image-devel 
+          zlib-devel 
+          libpng-devel
+
+
+Windows:  http://www.bloodshed.net/ 
+          Install necessary SDL Components
+
+
+DOS:      http://www.lavalit.com/download 
+          Grab OpenWatcom v1.1
+
+
+XBoX:     Google Search!
+
+Execution:
+
+Build.sh  - Script file that compiles using various SDK environments (PSP, PS2, Dreamcast, Gp2x, Linux, Windows and XBOX)
+
+
+-----------------------------------------------------------------------------------
+
+
+------------------------- Compiling using prebuilt SDK(s) -------------------------
+
+Requirements:  Windows/DOS
+
+sdkPack-v1.1.rar:  Located Here @ http://www.lavalit.com/download/Development/Compilers/All-In-One/
+
+Execution:
+
+Build.bat - Batch file that compiles all platforms using prebuilt SDK(s)
+
+-----------------------------------------------------------------------------------
+
+
+------------------------------------- Notes ---------------------------------------
+
+All compilations are moved to Releases folder when using build.sh or built.bat
+
+-----------------------------------------------------------------------------------
+
+
+Happy Linking.....;p
+
+
+Any questions I can be contacted thru my site http://www.lavalit.com
+
+
+By S.X.

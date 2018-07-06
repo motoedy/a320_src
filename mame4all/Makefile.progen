@@ -1,0 +1,111 @@
+TARGET = mame
+# TARGET = mess
+# TARGET = neomame
+# TARGET = tiny
+
+# set this the operating system you're building for
+# (actually you'll probably need your own main makefile anyways)
+# MAMEOS = msdos
+MAMEOS = dingoo
+
+# extension for executables
+# EXE = .exe
+EXE =
+
+# toolchain path
+TCPATH = $(HOME)/mipsel-dingux/usr/bin
+DEVPATH = $(HOME)/mipsel-dingux
+
+# CPU core include paths
+VPATH=src $(wildcard src/cpu/*)
+
+# compiler, linker and utilities
+CC = @$(TCPATH)/mipsel-linux-uclibc-gcc
+CPP = @$(TCPATH)/mipsel-linux-uclibc-g++
+LD = @$(CPP)
+ASM = @$(CPP)
+MD = @mkdir
+RM = @rm -f
+FIND = @find
+DEVINC = -I$(DEVPATH)/usr/include
+LIBINC = -L$(DEVPATH)/usr/lib
+
+
+EMULATOR = $(TARGET)$(EXE)
+
+DEFS = -DINLINE="static __inline" -Dasm="__asm__ __volatile__" -DLSB_FIRST -DALIGN_INTS -DALIGN_SHORTS -DDINGOO -DMAME_UNDERCLOCK -DMAME_FASTSOUND -DENABLE_AUTOFIRE -DBIGCASE -DMPU_JZ4740
+
+#-DMALLOC_DEBUG=1
+
+W_OPTS	= -Wall -Wno-write-strings -Wno-sign-compare
+
+F_OPTS = -falign-functions -falign-loops -falign-labels -falign-jumps \
+	-ffast-math -fsingle-precision-constant -funsafe-math-optimizations \
+	-fomit-frame-pointer -fno-builtin -fno-exceptions -fno-common \
+	-fstrict-aliasing  -fexpensive-optimizations -fno-rtti \
+	-finline -finline-functions -fpeel-loops \
+	-fprofile-generate
+
+CC_OPTS	= -O3 -mips32 -mtune=mips32 -mno-mips16 -msoft-float -mno-shared -mbranch-likely -pipe -G0 $(W_OPTS) $(F_OPTS)
+
+CFLAGS = -c $(DEVINC) $(DEVLIBS) -Isrc -Isrc/$(MAMEOS) -Isrc/zlib $(CC_OPTS)
+
+# Add the following for excellent debug info on linking
+#-v -Wl,-verbose
+
+LDFLAGS = $(CC_OPTS) -s -static
+
+LIBS = $(LIBINC) -lpthread
+
+OBJ = obj
+OBJDIRS = $(OBJ) $(OBJ)/cpu $(OBJ)/sound $(OBJ)/$(MAMEOS) \
+	$(OBJ)/drivers $(OBJ)/machine $(OBJ)/vidhrdw $(OBJ)/sndhrdw \
+	$(OBJ)/zlib
+
+all:	maketree $(EMULATOR)
+
+# include the various .mak files
+include src/core.mak
+include src/$(TARGET).mak
+include src/rules.mak
+include src/$(MAMEOS)/$(MAMEOS).mak
+
+
+# combine the various definitions to one
+CDEFS = $(DEFS) $(COREDEFS) $(CPUDEFS) $(SOUNDDEFS) $(ASMDEFS)
+
+$(EMULATOR): $(OBJS) $(COREOBJS) $(OSOBJS) $(DRVOBJS) $(DEBUG_MALLOC_OBJ)
+	@echo Linking $@...
+	@echo $(LD) $(LDFLAGS) $(DEBUG_MALLOC_OBJ) $(OBJS) $(COREOBJS) $(OSOBJS) $(LIBS) $(DRVOBJS) $(DEBUG_MALLOC_OBJ) -o $@
+	$(LD) $(LDFLAGS) $(OBJS) $(COREOBJS) $(OSOBJS) $(LIBS) $(DRVOBJS) $(DEBUG_MALLOC_OBJ) -Wl,-Map,$(EMULATOR).map -o $@
+
+$(OBJ)/%.o: src/%.c
+	@echo Compiling $<...
+	$(CC) $(CDEFS) $(CFLAGS) -c $< -o $@
+
+$(OBJ)/%.o: src/%.cpp
+	@echo Compiling $<...
+	$(CPP) $(CDEFS) $(CFLAGS) -c $< -o $@
+
+$(OBJ)/%.o: src/%.s
+	@echo Assembling $<...
+	$(CPP) $(CDEFS) $(CFLAGS) -c $< -o $@
+
+$(OBJ)/%.o: src/%.S
+	@echo Assembling $<...
+	$(CPP) $(CDEFS) $(CFLAGS) -c $< -o $@
+
+$(OBJ)/%.a:
+	@echo Library $<...
+	$(RM) $@
+	$(AR) cr $@ $^
+
+$(sort $(OBJDIRS)):
+	$(MD) $@
+
+maketree: $(sort $(OBJDIRS))
+
+clean:
+	$(FIND) $(OBJ) -name "*.o" -exec rm {} \;
+	$(RM) $(EMULATOR)
+	$(RM) $(FRONT)

@@ -1,0 +1,1141 @@
+dos/SOUNDMIX.C:    for(i=0; i<MAX_SAMPLES; i++) if(stricmp(filename, soundcache[i].filename)==0) return soundcache[i].index;
+dos/.svn/text-base/SOUNDMIX.C.svn-base:    for(i=0; i<MAX_SAMPLES; i++) if(stricmp(filename, soundcache[i].filename)==0) return soundcache[i].index;
+openbor.c:    if(stricmp(theName, "elapsed_time")==0){
+openbor.c:    else if(stricmp(theName, "levelpos")==0){
+openbor.c:    else if(stricmp(theName, "xpos")==0){
+openbor.c:    else if(stricmp(theName, "ypos")==0){
+openbor.c:    else if(stricmp(theName, "scrollminz")==0){
+openbor.c:    else if(stricmp(theName, "scrollmaxz")==0){
+openbor.c:    else if(stricmp(theName, "blockade")==0){
+openbor.c:    else if(stricmp(theName, "slowmotion")==0){
+openbor.c:    else if(stricmp(theName, "slowmotion_duration")==0){
+openbor.c:    else if(stricmp(theName, "lasthitx")==0){
+openbor.c:    else if(stricmp(theName, "lasthita")==0){
+openbor.c:    else if(stricmp(theName, "lasthitz")==0){
+openbor.c:    else if(stricmp(theName, "lasthitt")==0){
+openbor.c:    else if(stricmp(theName, "smartbomber")==0){
+openbor.c:    else if(stricmp(theName, "textbox")==0){
+openbor.c:    if(stricmp(image1,image2)==0) return 0;
+openbor.c:            if(stricmp(command, "blackbox")==0)
+openbor.c:            else if(stricmp(command, "whitebox")==0)
+openbor.c:            else if(stricmp(command, "color300")==0)
+openbor.c:            else if(stricmp(command, "color25")==0)
+openbor.c:            else if(stricmp(command, "color50")==0)
+openbor.c:            else if(stricmp(command, "color100")==0)
+openbor.c:            else if(stricmp(command, "color200")==0)
+openbor.c:            else if(stricmp(command, "color400")==0)
+openbor.c:            else if(stricmp(command, "color500")==0)
+openbor.c:            else if(stricmp(command, "colormagic")==0)
+openbor.c:            else if(stricmp(command, "colormagic2")==0)
+openbor.c:            else if(stricmp(command, "shadowcolor")==0)
+openbor.c:            else if(stricmp(command, "shadowalpha")==0) //gfxshadow alpha
+openbor.c:    if(stricmp(filename_normal,"none")!=0 && *filename_normal){
+openbor.c:    if(stricmp(filename_neon,"none")!=0 && *filename_neon){
+openbor.c:    if(stricmp(filename_screen,"none")!=0 && *filename_screen){
+openbor.c:            if(stricmp(sprite_map[i].filename, filename) == 0)
+openbor.c:            if(stricmp(command, "disablekey")==0){
+openbor.c:            else if(stricmp(command, "renamekey")==0){
+openbor.c:            else if(stricmp(command, "fontmonospace")==0)
+openbor.c:        result = stricmp(model_map[mid].model->name, name);
+openbor.c:    return (stricmp(model_map[first].model->name, name)==0)?model_map[first].model:NULL;
+openbor.c:			if(stricmp(model_map[i].model->name, model_map[i+1].model->name)>0)
+openbor.c:            if(stricmp(command, "name")==0)
+openbor.c:        if(stricmp(name, model_cache[i].name)==0) return i;
+openbor.c:        if(stricmp(name, model_cache[i].name)==0) return model_cache[i].path;
+openbor.c:            if(stricmp(command, "name")==0){
+openbor.c:                if(stricmp(newchar->name, "steam")==0)
+openbor.c:            else if(stricmp(command, "type")==0){    // Moved here to be able to access the character type later on
+openbor.c:                if(stricmp(value, "none")==0){
+openbor.c:                else if(stricmp(value, "player")==0){
+openbor.c:                else if(stricmp(value, "enemy")==0){
+openbor.c:                else if(stricmp(value, "item")==0){
+openbor.c:                else if(stricmp(value, "obstacle")==0){
+openbor.c:                else if(stricmp(value, "steamer")==0){
+openbor.c:                else if(stricmp(value, "pshot")==0){
+openbor.c:                else if(stricmp(value, "trap")==0){
+openbor.c:                else if(stricmp(value, "text")==0){    // Used for displaying text/images and freezing the screen
+openbor.c:                else if(stricmp(value, "endlevel")==0){    // Used for ending the level when the players reach a certain point
+openbor.c:                else if(stricmp(value, "npc")==0){    // NPC type
+openbor.c:                else if(stricmp(value, "panel")==0){    // NPC type
+openbor.c:            else if(stricmp(command, "subtype")==0){
+openbor.c:                if(stricmp(value, "biker")==0){
+openbor.c:                else if(stricmp(value, "arrow")==0){  // 7-1-2005 Arrow type
+openbor.c:                else if(stricmp(value, "notgrab")==0){  // 7-1-2005 notgrab type
+openbor.c:                else if(stricmp(value, "touch")==0){  // 7-1-2005 notgrab type
+openbor.c:                else if(stricmp(value, "weapon")==0){  // 7-1-2005 notgrab type
+openbor.c:                else if(stricmp(value, "noskip")==0){    // Text animation cannot be skipped if subtype noskip
+openbor.c:                else if(stricmp(value, "flydie")==0){    // Obstacle will fly across the screen when hit if subtype flydie
+openbor.c:                else if(stricmp(value, "both")==0){
+openbor.c:                else if(stricmp(value, "project")==0){
+openbor.c:                else if(stricmp(value, "follow")==0){
+openbor.c:                else if(stricmp(value, "chase")==0){
+openbor.c:            else if(stricmp(command, "health")==0){
+openbor.c:            else if(stricmp(command, "scroll")==0){
+openbor.c:            else if(stricmp(command, "mp")==0){// mp values to put max mp for player by tails
+openbor.c:            else if(stricmp(command, "nolife")==0){    // Feb 25, 2005 - Flag to display enemy life or not
+openbor.c:            else if(stricmp(command, "makeinv")==0){    // Mar 12, 2005 - If a value is supplied, corresponds to amount of time the player spawns invincible
+openbor.c:            else if(stricmp(command, "riseinv")==0){
+openbor.c:            else if(stricmp(command, "load")==0){
+openbor.c:            else if(stricmp(command, "score")==0){
+openbor.c:            else if(stricmp(command, "smartbomb")==0){ //smartbomb now use a normal attack box
+openbor.c:			else if(stricmp(command, "bounce")==0){						// Flag to determine if bounce/quake is to be used.
+openbor.c:            else if(stricmp(command, "noquake")==0){					// Mar 12, 2005 - Flag to determine if entity shakes screen
+openbor.c:            else if(stricmp(command, "hitenemy")==0){					// Flag to determine if an enemy projectile will hit enemies
+openbor.c:            else if(stricmp(command, "hostile")==0){
+openbor.c:                    if(stricmp(value, "enemy")==0){
+openbor.c:                    } else if(stricmp(value, "player")==0){
+openbor.c:                    } else if(stricmp(value, "obstacle")==0){
+openbor.c:                    } else if(stricmp(value, "shot")==0){
+openbor.c:                    } else if(stricmp(value, "npc")==0){
+openbor.c:            else if(stricmp(command, "candamage")==0){
+openbor.c:                    if(stricmp(value, "enemy")==0){
+openbor.c:                    } else if(stricmp(value, "player")==0){
+openbor.c:                    } else if(stricmp(value, "obstacle")==0){
+openbor.c:                    } else if(stricmp(value, "shot")==0){
+openbor.c:                    } else if(stricmp(value, "npc")==0){
+openbor.c:                    } else if(stricmp(value, "ground")==0){ // not really needed, though
+openbor.c:            else if(stricmp(command, "projectilehit")==0){
+openbor.c:                    if(stricmp(value, "enemy")==0){
+openbor.c:                    } else if(stricmp(value, "player")==0){
+openbor.c:                    } else if(stricmp(value, "obstacle")==0){
+openbor.c:                    } else if(stricmp(value, "shot")==0){
+openbor.c:                    } else if(stricmp(value, "npc")==0){
+openbor.c:            else if(stricmp(command, "aimove")==0){
+openbor.c:                    if(stricmp(value, "normal")==0){
+openbor.c:                    else if(stricmp(value, "chase")==0){
+openbor.c:                    else if(stricmp(value, "chasex")==0){
+openbor.c:                    else if(stricmp(value, "chasez")==0){
+openbor.c:                    else if(stricmp(value, "avoid")==0){
+openbor.c:                    else if(stricmp(value, "avoidx")==0){
+openbor.c:                    else if(stricmp(value, "avoidz")==0){
+openbor.c:                    else if(stricmp(value, "wander")==0){
+openbor.c:                    else if(stricmp(value, "biker")==0){
+openbor.c:                    else if(stricmp(value, "arrow")==0){
+openbor.c:                    else if(stricmp(value, "star")==0){
+openbor.c:                    else if(stricmp(value, "bomb")==0){
+openbor.c:                    else if(stricmp(value, "nomove")==0){
+openbor.c:                    if(stricmp(value, "normal")==0){
+openbor.c:                    else if(stricmp(value, "ignoreholes")==0){
+openbor.c:            else if(stricmp(command, "aiattack")==0){
+openbor.c:            else if(stricmp(command, "subject_to_wall")==0)
+openbor.c:            else if(stricmp(command, "subject_to_hole")==0)
+openbor.c:            else if(stricmp(command, "subject_to_platform")==0)
+openbor.c:            else if(stricmp(command, "subject_to_obstacle")==0)
+openbor.c:            else if(stricmp(command, "subject_to_gravity")==0)
+openbor.c:            else if(stricmp(command, "subject_to_screen")==0)
+openbor.c:            else if(stricmp(command, "subject_to_minz")==0)
+openbor.c:            else if(stricmp(command, "subject_to_maxz")==0)
+openbor.c:            else if(stricmp(command, "no_adjust_base")==0)
+openbor.c:            else if(stricmp(command, "instantitemdeath")==0)
+openbor.c:            else if(stricmp(command, "secret")==0){
+openbor.c:            else if(stricmp(command, "modelflag")==0){ // model copy flag
+openbor.c:            else if(stricmp(command, "weaploss")==0){
+openbor.c:            else if(stricmp(command, "weapnum")==0){
+openbor.c:            else if(stricmp(command, "project")==0){  // New projectile subtype
+openbor.c:                if(stricmp(value, "none")==0) newchar->project = -1;
+openbor.c:            else if(stricmp(command, "weapons")==0){
+openbor.c:                        if(stricmp(value, "none")!=0){
+openbor.c:            else if(stricmp(command, "shootnum")==0){
+openbor.c:            else if(stricmp(command, "reload")==0){
+openbor.c:            else if(stricmp(command, "typeshot")==0){
+openbor.c:            else if(stricmp(command, "counter")==0){
+openbor.c:            else if(stricmp(command, "animal")==0){
+openbor.c:            else if(stricmp(command, "rider")==0){
+openbor.c:                if(stricmp(value, "none")==0) newchar->rider = -1;
+openbor.c:            else if(stricmp(command, "knife")==0 ||
+openbor.c:	                stricmp(command, "fireb")==0 ||
+openbor.c:					stricmp(command, "playshot")==0 ||
+openbor.c:					stricmp(command, "playshotw")==0) {
+openbor.c:                if(stricmp(value, "none")==0) newchar->knife = -1;
+openbor.c:			else if(stricmp(command, "playshotno")==0){
+openbor.c:                if(stricmp(value, "none")==0) newchar->pshotno = -1;
+openbor.c:            else if(stricmp(command, "star")==0){
+openbor.c:                if(stricmp(value, "none")==0) newchar->star = -1;
+openbor.c:            else if(stricmp(command, "bomb")==0 ||
+openbor.c:				    stricmp(command, "playbomb")==0){
+openbor.c:                if(stricmp(value, "none")==0) newchar->bomb = -1;
+openbor.c:            else if(stricmp(command, "flash")==0){    // Now all characters can have their own flash - even projectiles (useful for blood)
+openbor.c:                if(stricmp(value, "none")==0) newchar->flash = -1;
+openbor.c:            else if(stricmp(command, "bflash")==0){    // Flash that is spawned if an attack is blocked
+openbor.c:                if(stricmp(value, "none")==0) newchar->bflash = -1;
+openbor.c:            else if(stricmp(command, "dust")==0){    // Spawned when hitting the ground to "kick up dust"
+openbor.c:                if(stricmp(value, "none")==0) newchar->dust[0] = -1;
+openbor.c:                if(stricmp(value, "none")==0) newchar->dust[1] = -1;
+openbor.c:                if(stricmp(value, "none")==0) newchar->dust[2] = -1;
+openbor.c:            else if(stricmp(command, "branch")==0){    // for endlevel item's level branch
+openbor.c:            else if(stricmp(command, "cantgrab")==0 ||
+openbor.c:				    stricmp(command, "notgrab")==0){
+openbor.c:            else if(stricmp(command, "antigrab")==0) // a can grab b: a->antigrab - b->grabforce <=0
+openbor.c:            else if(stricmp(command, "grabforce")==0)
+openbor.c:            else if(stricmp(command, "grabback")==0){
+openbor.c:            else if(stricmp(command, "offscreenkill")==0){
+openbor.c:            else if(stricmp(command, "falldie")==0 ||
+openbor.c:				    stricmp(command, "death")==0){
+openbor.c:            else if(stricmp(command, "speed")==0){
+openbor.c:            else if(stricmp(command, "speedf")==0){ // float speed
+openbor.c:            else if(stricmp(command, "jumpspeed")==0){
+openbor.c:            else if(stricmp(command, "jumpspeedf")==0){
+openbor.c:            else if(stricmp(command, "antigravity")==0){
+openbor.c:            else if(stricmp(command, "stealth")==0){
+openbor.c:            else if(stricmp(command, "detect")==0){
+openbor.c:			else if(stricmp(command, "jugglepoints")==0){
+openbor.c:			else if(stricmp(command, "riseattacktype")==0){
+openbor.c:			else if(stricmp(command, "guardpoints")==0){
+openbor.c:x(stricmp(value, #y)==0)\
+openbor.c:            else if(stricmp(command, "defense")==0){
+openbor.c:                else if(stricmp(value, "ALL")==0)
+openbor.c:x(stricmp(value, #y)==0)\
+openbor.c:            else if(stricmp(command, "offense")==0){
+openbor.c:                else if(stricmp(value, "ALL")==0)
+openbor.c:            else if(stricmp(command, "height")==0){
+openbor.c:            else if(stricmp(command, "jumpheight")==0){        // 28-12-2004 if string for jump height found
+openbor.c:            else if(stricmp(command, "jumpmove")==0){    // see openbor.h for details
+openbor.c:            else if(stricmp(command, "knockdowncount")==0){
+openbor.c:            else if(stricmp(command, "grabdistance")==0){        // 30-12-2004 if string for grabdistance found
+openbor.c:            else if(stricmp(command, "grabfinish")==0){ // wait until grab animation is finished
+openbor.c:            else if(stricmp(command, "throwdamage")==0){
+openbor.c:            else if(stricmp(command, "shadow")==0){
+openbor.c:            else if(stricmp(command, "gfxshadow")==0){
+openbor.c:            else if(stricmp(command, "aironly")==0){    // Shadows display in air only?
+openbor.c:            else if(stricmp(command, "fmap")==0){    // Map that corresponds with the remap when a character is frozen
+openbor.c:            else if(stricmp(command, "komap")==0){   // Remap when character is KO'd.
+openbor.c:            else if(stricmp(command, "hmap")==0){    // Maps range unavailable to player in select screen.
+openbor.c:            else if(stricmp(command, "setlayer")==0){
+openbor.c:            else if(stricmp(command, "toflip")==0){    // Flag to determine if flashes images will be flipped or not
+openbor.c:            else if(stricmp(command, "nodieblink")==0){    // Added to determine if dying animation blinks or not
+openbor.c:            else if(stricmp(command, "noatflash")==0){    // Flag to determine if an opponents attack spawns their flash or not
+openbor.c:            else if(stricmp(command, "nomove")==0){    // If set, will be static (speed must be set to 0 or left blank)
+openbor.c:            else if(stricmp(command, "nodrop")==0){
+openbor.c:            else if(stricmp(command, "thold")==0){    // Threshold for enemies/players block
+openbor.c:            else if(stricmp(command, "running")==0){    // The speed at which the player runs
+openbor.c:            else if(stricmp(command, "blockodds")==0){    // Odds that an attack will hit an enemy (1 : blockodds)
+openbor.c:            else if(stricmp(command, "holdblock")==0){
+openbor.c:            else if(stricmp(command, "blockpain")==0){
+openbor.c:            else if(stricmp(command, "nopassiveblock")==0){
+openbor.c:            else if(stricmp(command, "edelay")==0){                
+openbor.c:            else if(stricmp(command, "paingrab")==0){
+openbor.c:            else if(stricmp(command, "throw")==0){
+openbor.c:            else if(stricmp(command, "grabwalk")==0){
+openbor.c:            else if(stricmp(command, "grabturn")==0){
+openbor.c:            else if(stricmp(command, "throwframewait")==0){
+openbor.c:            else if(stricmp(command, "diesound")==0){
+openbor.c:            else if(stricmp(command, "icon")==0){
+openbor.c:            else if(stricmp(command, "iconpain")==0){    // 20-1-2005 New icons here
+openbor.c:            else if(stricmp(command, "icondie")==0){
+openbor.c:            else if(stricmp(command, "iconget")==0){
+openbor.c:            else if(stricmp(command, "iconw")==0){
+openbor.c:            else if(stricmp(command, "iconmphigh")==0){
+openbor.c:            else if(stricmp(command, "iconmphalf")==0){
+openbor.c:            else if(stricmp(command, "iconmplow")==0){
+openbor.c:            else if(stricmp(command, "parrow")==0){    // Image that is displayed when player 1 spawns invincible
+openbor.c:            else if(stricmp(command, "parrow2")==0){    // Image that is displayed when player 2 spawns invincible
+openbor.c:            else if(stricmp(command, "parrow3")==0){    // Image that is displayed when player 3 spawns invincible
+openbor.c:            else if(stricmp(command, "parrow4")==0){    // Image that is displayed when player 4 spawns invincible
+openbor.c:            else if(stricmp(command, "atchain")==0)
+openbor.c:            else if(stricmp(command, "combostyle")==0)
+openbor.c:            else if(stricmp(command, "credit")==0){
+openbor.c:            else if(stricmp(command, "nopain")==0){
+openbor.c:            else if(stricmp(command, "escapehits")==0){      // How many times an enemy can be hit before retaliating
+openbor.c:            else if(stricmp(command, "chargerate")==0){      // How much mp does this character gain while recharging?
+openbor.c:            else if(stricmp(command, "mprate")==0){
+openbor.c:            else if(stricmp(command, "mpset")==0){    // Mp bar wax/wane.
+openbor.c:            else if(stricmp(command, "sleepwait")==0){
+openbor.c:			else if(stricmp(command, "guardrate")==0){
+openbor.c:            else if(stricmp(command, "aggression")==0){
+openbor.c:            else if(stricmp(command, "risetime")==0){
+openbor.c:            else if(stricmp(command, "facing")==0){
+openbor.c:            else if(stricmp(command, "turndelay")==0){
+openbor.c:            else if(stricmp(command, "lifespan")==0){
+openbor.c:            else if(stricmp(command, "summonkill")==0){
+openbor.c:            else if(stricmp(command, "lifeposition")==0){
+openbor.c:            else if(stricmp(command, "lifebarstatus")==0)
+openbor.c:            else if(stricmp(command, "iconposition")==0){
+openbor.c:            else if(stricmp(command, "nameposition")==0){
+openbor.c:            else if(stricmp(command, "com")==0){
+openbor.c:                    if(stricmp(value, "u")==0){
+openbor.c:                    else if(stricmp(value, "d")==0){
+openbor.c:                    else if(stricmp(value, "f")==0){
+openbor.c:                    else if(stricmp(value, "b")==0){
+openbor.c:                    else if(stricmp(value, "a")==0){
+openbor.c:					else if(stricmp(value, "a2")==0){
+openbor.c:					else if(stricmp(value, "a3")==0){
+openbor.c:					else if(stricmp(value, "a4")==0){
+openbor.c:                    else if(stricmp(value, "j")==0){
+openbor.c:                    else if(stricmp(value, "s")==0){
+openbor.c:                    else if(stricmp(value, "k")==0){
+openbor.c:            else if(stricmp(command, "remap")==0){
+openbor.c:            else if(stricmp(command, "palette")==0)
+openbor.c:            else if(stricmp(command, "alternatepal")==0)
+openbor.c:            else if(stricmp(command, "globalmap")==0)
+openbor.c:            else if(stricmp(command, "alpha")==0){
+openbor.c:            else if(stricmp(command, "remove")==0){
+openbor.c:            else if(stricmp(command, "script")==0 ){//load the update script
+openbor.c:            else if(stricmp(command, "takedamagescript")==0){//load the takedamage script
+openbor.c:            else if(stricmp(command, "onfallscript")==0){//load the onfall script
+openbor.c:            else if(stricmp(command, "onpainscript")==0){//load the onpain script
+openbor.c:            else if(stricmp(command, "onblocksscript")==0){//load the onblocks script
+openbor.c:            else if(stricmp(command, "onblockwscript")==0){//load the onblockw script
+openbor.c:            else if(stricmp(command, "onblockoscript")==0){//load the onblocko script
+openbor.c:            else if(stricmp(command, "onblockzscript")==0){//load the onblockz script
+openbor.c:            else if(stricmp(command, "onblockascript")==0){//load the onblocka script
+openbor.c:            else if(stricmp(command, "onmovexscript")==0){//load the onmovex script
+openbor.c:            else if(stricmp(command, "onmovezscript")==0){//load the onmovez script
+openbor.c:            else if(stricmp(command, "onmoveascript")==0){//load the onmovea script
+openbor.c:            else if(stricmp(command, "ondeathscript")==0){//load the takedamage script
+openbor.c:            else if(stricmp(command, "onkillscript")==0){//load the takedamage script
+openbor.c:            else if(stricmp(command, "didblockscript")==0){//load the takedamage script
+openbor.c:            else if(stricmp(command, "didhitscript")==0){//load the didhit script
+openbor.c:            else if(stricmp(command, "onspawnscript")==0){//load the onspawn script
+openbor.c:            else if(stricmp(command, "animationscript")==0){//load the animation script
+openbor.c:            else if(stricmp(command, "keyscript")==0){//load the key script
+openbor.c:            else if(stricmp(command, "anim")==0){
+openbor.c:                else if(stricmp(value, "waiting")==0){
+openbor.c:                else if(stricmp(value, "sleep")==0){
+openbor.c:                else if(stricmp(value, "run")==0){
+openbor.c:                else if(stricmp(value, "jump")==0){
+openbor.c:                else if(stricmp(value, "duck")==0){
+openbor.c:                else if(stricmp(value, "land")==0){
+openbor.c:                else if(stricmp(value, "pain")==0){
+openbor.c:                else if(stricmp(value, "spain")==0){    // If shock attacks don't knock opponent down, play this
+openbor.c:                else if(stricmp(value, "bpain")==0){    // If burn attacks don't knock opponent down, play this
+openbor.c:                else if(stricmp(value, "fall")==0){
+openbor.c:                else if(stricmp(value, "shock")==0){    // If shock attacks do knock opponent down, play this
+openbor.c:                else if(stricmp(value, "burn")==0){    // If burn attacks do knock opponent down, play this
+openbor.c:                else if(stricmp(value, "death")==0){      //  If new animation is present, overwrite new_anim with it.
+openbor.c:                else if(stricmp(value, "sdie")==0){
+openbor.c:                else if(stricmp(value, "bdie")==0){
+openbor.c:				else if(stricmp(value, "chipdeath")==0){
+openbor.c:				else if(stricmp(value, "guardbreak")==0){
+openbor.c:				else if(stricmp(value, "riseb")==0){
+openbor.c:				else if(stricmp(value, "rises")==0){
+openbor.c:                else if(stricmp(value, "rise")==0){
+openbor.c:				else if(stricmp(value, "riseattackb")==0){
+openbor.c:				else if(stricmp(value, "riseattacks")==0){
+openbor.c:                else if(stricmp(value, "riseattack")==0){
+openbor.c:                else if(stricmp(value, "select")==0){
+openbor.c:                else if(stricmp(value, "throwattack")==0){
+openbor.c:                else if(stricmp(value, "upper")==0){
+openbor.c:                else if(stricmp(value, "cant")==0){
+openbor.c:                else if(stricmp(value, "jumpcant")==0){
+openbor.c:                else if(stricmp(value, "charge")==0){
+openbor.c:                else if(stricmp(value, "faint")==0){
+openbor.c:                else if(stricmp(value, "dodge")==0){
+openbor.c:                else if(stricmp(value, "special")==0 || stricmp(value, "special1")==0){
+openbor.c:                else if(stricmp(value, "special2")==0){
+openbor.c:                else if(stricmp(value, "special3")==0 || stricmp(value, "jumpspecial")==0){
+openbor.c:                else if(stricmp(value, "jumpattack")==0){
+openbor.c:                else if(stricmp(value, "jumpattack2")==0){
+openbor.c:                else if(stricmp(value, "jumpattack3")==0){
+openbor.c:                else if(stricmp(value, "jumpforward")==0){
+openbor.c:                else if(stricmp(value, "runjumpattack")==0){
+openbor.c:                else if(stricmp(value, "runattack")==0){
+openbor.c:                else if(stricmp(value, "attackup")==0){
+openbor.c:                else if(stricmp(value, "attackdown")==0){
+openbor.c:                else if(stricmp(value, "attackforward")==0){
+openbor.c:                else if(stricmp(value, "attackbackward")==0){
+openbor.c:                else if(stricmp(value, "attackboth")==0){    // Attack that is executed by holding down j and pressing a
+openbor.c:                else if(stricmp(value, "get")==0){
+openbor.c:                else if(stricmp(value, "grab")==0){
+openbor.c:                else if(stricmp(value, "grabwalk")==0){
+openbor.c:                else if(stricmp(value, "grabwalkup")==0){
+openbor.c:                else if(stricmp(value, "grabwalkdown")==0){
+openbor.c:                else if(stricmp(value, "grabbackwalk")==0){
+openbor.c:                else if(stricmp(value, "grabturn")==0){
+openbor.c:                else if(stricmp(value, "grabbed")==0){    // New grabbed animation for when grabbed
+openbor.c:                else if(stricmp(value, "grabbedwalk")==0){    // New animation for when grabbed and forced to walk
+openbor.c:                else if(stricmp(value, "grabbedwalkup")==0){
+openbor.c:                else if(stricmp(value, "grabbedwalkdown")==0){
+openbor.c:                else if(stricmp(value, "grabbedbackwalk")==0){
+openbor.c:                else if(stricmp(value, "grabbedturn")==0){
+openbor.c:                else if(stricmp(value, "grabattack")==0){
+openbor.c:                else if(stricmp(value, "grabattack2")==0){
+openbor.c:                else if(stricmp(value, "grabforward")==0){    // New grab attack for when pressing forward attack
+openbor.c:                else if(stricmp(value, "grabforward2")==0){    // New grab attack for when pressing forward attack
+openbor.c:                else if(stricmp(value, "grabbackward")==0){    // New grab attack for when pressing backward attack
+openbor.c:                else if(stricmp(value, "grabbackward2")==0){    // New grab attack for when pressing backward attack
+openbor.c:                else if(stricmp(value, "grabup")==0){    // New grab attack for when pressing up attack
+openbor.c:                else if(stricmp(value, "grabup2")==0){    // New grab attack for when pressing up attack
+openbor.c:                else if(stricmp(value, "grabdown")==0){    // New grab attack for when pressing down attack
+openbor.c:                else if(stricmp(value, "grabdown2")==0){    // New grab attack for when pressing down attack
+openbor.c:                else if(stricmp(value, "spawn")==0){      //  spawn/respawn works separately now
+openbor.c:                else if(stricmp(value, "respawn")==0){      //  spawn/respawn works separately now
+openbor.c:                else if(stricmp(value, "throw")==0){
+openbor.c:                else if(stricmp(value, "block")==0){    // Now enemies can block attacks on occasion
+openbor.c:                else if(stricmp(value, "chargeattack")==0){
+openbor.c:                else if(stricmp(value, "vault")==0){
+openbor.c:                else if(stricmp(value, "turn")==0){
+openbor.c:                else if(stricmp(value, "forwardjump")==0){
+openbor.c:                else if(stricmp(value, "runjump")==0){
+openbor.c:                else if(stricmp(value, "jumpland")==0){
+openbor.c:                else if(stricmp(value, "jumpdelay")==0){
+openbor.c:                else if(stricmp(value, "hitwall")==0){
+openbor.c:                else if(stricmp(value, "slide")==0){
+openbor.c:                else if(stricmp(value, "runslide")==0){
+openbor.c:				else if(stricmp(value, "blockpainb")==0){
+openbor.c:				else if(stricmp(value, "blockpains")==0){
+openbor.c:                else if(stricmp(value, "blockpain")==0){
+openbor.c:                else if(stricmp(value, "duckattack")==0){
+openbor.c:            else if(stricmp(command, "loop")==0){
+openbor.c:            else if(stricmp(command, "animheight")==0){
+openbor.c:            else if(stricmp(command, "delay")==0){
+openbor.c:            else if(stricmp(command, "offset")==0){
+openbor.c:            else if(stricmp(command, "shadowcoords")==0){
+openbor.c:            else if(stricmp(command, "energycost")==0 || stricmp(command, "mpcost")==0){
+openbor.c:            else if(stricmp(command, "mponly")==0){
+openbor.c:            else if(stricmp(command, "chargetime")==0){
+openbor.c:            else if(stricmp(command, "dive")==0){
+openbor.c:            else if(stricmp(command, "dive1")==0){
+openbor.c:            else if(stricmp(command, "dive2")==0){
+openbor.c:            else if(stricmp(command, "attackone")==0){
+openbor.c:            else if(stricmp(command, "counterattack")==0){
+openbor.c:            else if(stricmp(command, "throwframe")==0 ||
+openbor.c:					stricmp(command, "pshotframe")==0 ||
+openbor.c:					stricmp(command, "pshotframew")==0 ||
+openbor.c:				    stricmp(command, "pshotframeno")==0){
+openbor.c:			else if(stricmp(command, "shootframe")==0){
+openbor.c:            else if(stricmp(command, "tossframe")==0 ||
+openbor.c:				    stricmp(command, "pbombframe")==0){
+openbor.c:            else if(stricmp(command, "custknife")==0 ||
+openbor.c:				    stricmp(command, "custpshot")==0 ||
+openbor.c:					stricmp(command, "custpshotw")==0){
+openbor.c:			else if(stricmp(command, "custpshotno")==0){
+openbor.c:            else if(stricmp(command, "custbomb")==0 ||
+openbor.c:				    stricmp(command, "custpbomb")==0){
+openbor.c:            else if(stricmp(command, "custstar")==0){
+openbor.c:            else if(stricmp(command, "jumpframe")==0){
+openbor.c:            else if(stricmp(command, "bouncefactor")==0)
+openbor.c:            else if(stricmp(command, "landframe")==0)
+openbor.c:            else if(stricmp(command, "dropframe")==0)
+openbor.c:			else if(stricmp(command, "cancel")==0) // OX. Cancel command.
+openbor.c:                    if(stricmp(value, "u")==0){
+openbor.c:                    else if(stricmp(value, "d")==0){
+openbor.c:                    else if(stricmp(value, "f")==0){
+openbor.c:                    else if(stricmp(value, "b")==0){
+openbor.c:                    else if(stricmp(value, "a")==0){
+openbor.c:					else if(stricmp(value, "a2")==0){
+openbor.c:					else if(stricmp(value, "a3")==0){
+openbor.c:					else if(stricmp(value, "a4")==0){
+openbor.c:                    else if(stricmp(value, "j")==0){
+openbor.c:                    else if(stricmp(value, "s")==0){
+openbor.c:                    else if(stricmp(value, "k")==0){
+openbor.c:            else if(stricmp(command, "sound")==0){
+openbor.c:            else if(stricmp(command, "hitfx")==0){
+openbor.c:            else if(stricmp(command, "hitflash")==0){
+openbor.c:                if(stricmp(value, "none")==0) attack.hitflash = -1;
+openbor.c:			else if(stricmp(command, "blockflash")==0){
+openbor.c:                if(stricmp(value, "none")==0) attack.blockflash = -1;
+openbor.c:			else if(stricmp(command, "blockfx")==0){
+openbor.c:            else if(stricmp(command, "fastattack")==0){
+openbor.c:            else if(stricmp(command, "bbox")==0){
+openbor.c:            else if(stricmp(command, "bboxz")==0){
+openbor.c:            else if(stricmp(command, "platform")==0){
+openbor.c:            else if(stricmp(command, "drawmethod")==0) // special effects
+openbor.c:            else if(stricmp(command, "nodrawmethod")==0)//disable special effects
+openbor.c:                stricmp(command, "shock")==0 || stricmp(command, "burn")==0 ||
+openbor.c:                stricmp(command, "steal")==0 || stricmp(command, "freeze")==0 || stricmp(command, "itembox")==0){
+openbor.c:					if(stricmp(command, "steal")==0) attack.steal = 1;
+openbor.c:                    if(stricmp(command, "freeze")==0)
+openbor.c:                    if(stricmp(command, "attack")==0 || stricmp(command, "attack1")==0) attack.attack_type = ATK_NORMAL;
+openbor.c:                    else if(stricmp(command, "attack2")     ==0)    attack.attack_type  = ATK_NORMAL2;
+openbor.c:                    else if(stricmp(command, "attack3")     ==0)    attack.attack_type  = ATK_NORMAL3;
+openbor.c:                    else if(stricmp(command, "attack4")     ==0)    attack.attack_type  = ATK_NORMAL4;
+openbor.c:                    else if(stricmp(command, "attack5")     ==0)    attack.attack_type  = ATK_NORMAL5;
+openbor.c:                    else if(stricmp(command, "attack6")     ==0)    attack.attack_type  = ATK_NORMAL6;
+openbor.c:                    else if(stricmp(command, "attack7")     ==0)    attack.attack_type  = ATK_NORMAL7;
+openbor.c:                    else if(stricmp(command, "attack8")     ==0)    attack.attack_type  = ATK_NORMAL8;
+openbor.c:                    else if(stricmp(command, "attack9")     ==0)    attack.attack_type  = ATK_NORMAL9;
+openbor.c:                    else if(stricmp(command, "attack10")    ==0)    attack.attack_type  = ATK_NORMAL10;
+openbor.c:                    else if(stricmp(command, "shock")       ==0)    attack.attack_type  = ATK_SHOCK;
+openbor.c:                    else if(stricmp(command, "burn")        ==0)    attack.attack_type  = ATK_BURN;
+openbor.c:                    else if(stricmp(command, "steal")       ==0)    attack.attack_type  = ATK_STEAL;
+openbor.c:                    else if(stricmp(command, "freeze")      ==0)    attack.attack_type  = ATK_FREEZE;
+openbor.c:                    else if(stricmp(command, "itembox")     ==0)    attack.attack_type  = ATK_ITEM;
+openbor.c:            else if(stricmp(command, "attackz")==0 || stricmp(command, "hitz")==0){
+openbor.c:            else if(stricmp(command, "blast")==0){
+openbor.c:            else if(stricmp(command, "dropv")==0) // drop velocity add if the target is knocked down
+openbor.c:			else if(stricmp(command, "otg")==0) // Over The Ground hit.
+openbor.c:			else if(stricmp(command, "jugglecost")==0) // if cost >= opponents jugglepoints , we can juggle
+openbor.c:			else if(stricmp(command, "guardcost")==0) // if cost >= opponents guardpoints , opponent will play guardcrush anim
+openbor.c:            else if(stricmp(command, "stun")==0) // DC, 12/19/2007. Like Freeze, but no auto remap.
+openbor.c:            else if(stricmp(command, "grabin")==0) // fake grab distanse efffect, not link
+openbor.c:            else if(stricmp(command, "noreflect")==0) // only cost target's hp, don't knock down or cause pain, unless the target is killed
+openbor.c:            else if(stricmp(command, "forcedirection")==0) // the attack direction
+openbor.c:            else if(stricmp(command, "damageonlanding")==0) // fake throw damage on landing
+openbor.c:            else if(stricmp(command, "seal")==0) // Disable special moves for specified time.
+openbor.c:            else if(stricmp(command, "staydown")==0) // Disable special moves for specified time.
+openbor.c:            else if(stricmp(command, "dot")==0) // Cause damage over time effect.
+openbor.c:            else if(stricmp(command, "forcemap")==0) // force color map change for specified time
+openbor.c:			else if(stricmp(command, "idle")==0){
+openbor.c:            else if(stricmp(command, "move")==0){
+openbor.c:            else if(stricmp(command, "movez")==0){
+openbor.c:            else if(stricmp(command, "movea")==0){
+openbor.c:            else if(stricmp(command, "seta")==0){
+openbor.c:            else if(stricmp(command, "fshadow")==0){
+openbor.c:            else if(stricmp(command, "range")==0){
+openbor.c:            else if(stricmp(command, "rangez")==0){
+openbor.c:            else if(stricmp(command, "rangea")==0){
+openbor.c:            else if(stricmp(command, "frame")==0){
+openbor.c:                    if(stricmp(value3, "frame")==0) framecount++;
+openbor.c:                    if((stricmp(value3, "anim")==0) || (pos+peek >= size)) frameset = 1;
+openbor.c:            else if(stricmp(command, "flipframe")==0){
+openbor.c:            else if(stricmp(command, "followanim")==0){
+openbor.c:            else if(stricmp(command, "followcond")==0){
+openbor.c:            else if(stricmp(command, "counterframe")==0){
+openbor.c:            else if(stricmp(command, "weaponframe")==0){
+openbor.c:            else if(stricmp(command, "quakeframe")==0){
+openbor.c:            else if(stricmp(command, "subentity")==0 ||
+openbor.c:				    stricmp(command, "custentity")==0){
+openbor.c:            else if(stricmp(command, "spawnframe")==0){
+openbor.c:            else if(stricmp(command, "summonframe")==0){
+openbor.c:            else if(stricmp(command, "unsummonframe")==0){
+openbor.c:            else if(stricmp(command, "@script") == 0){
+openbor.c:            else if(stricmp(command, "@cmd")==0){ //translate @cmd into script function call
+openbor.c:            if(stricmp(command, "maxscriptvars")==0) // each script can have a variable list that can be accessed by index
+openbor.c:            else if(stricmp(command, "maxentityvars")==0) // each entity can have a variable list that can be accessed by index
+openbor.c:            else if(stricmp(command, "maxindexedvars")==0) // a global variable list that can be accessed by index
+openbor.c:            else if(stricmp(command, "maxglobalvars")==0) // for global_var_list, default to 2048
+openbor.c:            if(stricmp(command, "maxidles")==0) // max idle stances
+openbor.c:            if(stricmp(command, "maxwalks")==0) // max walks
+openbor.c:            if(stricmp(command, "maxbackwalks")==0) // max backward walks
+openbor.c:            if(stricmp(command, "maxups")==0) // max up walks
+openbor.c:            if(stricmp(command, "maxdowns")==0) // max down walks
+openbor.c:            if(stricmp(command, "maxattacktypes")==0) // max attacktype/pain/fall/die
+openbor.c:            else if(stricmp(command, "maxfollows")==0) // max follow-ups
+openbor.c:            else if(stricmp(command, "maxfreespecials")==0)// max freespecials
+openbor.c:            else if(stricmp(command, "maxattacks")==0) // max attacks
+openbor.c:			if(stricmp(command, "music")==0){
+openbor.c:            else if(stricmp(command, "load")==0){
+openbor.c:            else if(stricmp(command, "colourselect")==0){   // 6-2-2005 if string for colourselect found
+openbor.c:            else if(stricmp(command, "spdirection")==0){                // Select Player Direction for select player screen
+openbor.c:            else if(stricmp(command, "autoland")==0){    // New flag to determine if a player auto lands when thrown by another player (2 completely disables the ability to land)
+openbor.c:            else if(stricmp(command, "nolost")==0){    // this is use for dont lost your weapon if you grab a enemy flag it to 1 to no drop by tails
+openbor.c:            else if(stricmp(command, "ajspecial")==0){    // Flag to determine if a + j executes special
+openbor.c:            else if(stricmp(command, "nocost")==0){    // Nocost set in models.txt
+openbor.c:            else if(stricmp(command, "nocheats")==0){ //disable cheat option in menu
+openbor.c:            else if(stricmp(command, "nodropen")==0){
+openbor.c:            else if(stricmp(command, "know")==0){
+openbor.c:            else if(stricmp(command, "noaircancel")==0){
+openbor.c:			else if(stricmp(command, "nomaxrushreset")==0){
+openbor.c:            else if(stricmp(command, "mpblock")==0){               // Take from MP first?
+openbor.c:            else if(stricmp(command, "blockratio")==0){            // Nullify or reduce damage?
+openbor.c:            else if(stricmp(command, "nochipdeath")==0){
+openbor.c:            else if(stricmp(command, "lifescore")==0){
+openbor.c:            else if(stricmp(command, "credscore")==0){
+openbor.c:            else if(stricmp(command, "versusdamage")==0){
+openbor.c:            else if(!(stricmp(command, "maxdowns")==0 ||
+openbor.c:                      stricmp(command, "maxups")==0 ||
+openbor.c:                      stricmp(command, "maxbackwalks")==0 ||
+openbor.c:                      stricmp(command, "maxwalks")==0 ||
+openbor.c:                      stricmp(command, "maxidles")==0 ||
+openbor.c:                      stricmp(command, "maxattacktypes")==0 ||
+openbor.c:                      stricmp(command, "maxfollows")==0 ||
+openbor.c:                      stricmp(command, "maxfreespecials")==0 ||
+openbor.c:                      stricmp(command, "maxattacks")==0))
+openbor.c:			if(stricmp(command, "blendfx")==0){
+openbor.c:            else if(stricmp(command, "set")==0){
+openbor.c:            else if(stricmp(command, "ifcomplete")==0){
+openbor.c:            else if(stricmp(command, "skipselect")==0){
+openbor.c:            else if(stricmp(command, "file")==0){
+openbor.c:            else if(stricmp(command, "scene")==0){
+openbor.c:            else if(stricmp(command, "select")==0){
+openbor.c:            else if(stricmp(command, "next")==0){
+openbor.c:            else if(stricmp(command, "end")==0){
+openbor.c:            else if(stricmp(command, "lives")==0){
+openbor.c:            else if(stricmp(command, "cansave")==0){
+openbor.c:            else if(stricmp(command, "z")==0){
+openbor.c:            else if(stricmp(command, "branch")==0){
+openbor.c:            else if(stricmp(command, "p1life")==0){
+openbor.c:            else if(stricmp(command, "p2life")==0){
+openbor.c:            else if(stricmp(command, "p3life")==0){
+openbor.c:            else if(stricmp(command, "p4life")==0){
+openbor.c:            else if(stricmp(command, "p1mp")==0){
+openbor.c:            else if(stricmp(command, "p2mp")==0){
+openbor.c:            else if(stricmp(command, "p3mp")==0){
+openbor.c:            else if(stricmp(command, "p4mp")==0){
+openbor.c:            else if(stricmp(command, "p1lifex")==0){
+openbor.c:            else if(stricmp(command, "p2lifex")==0){
+openbor.c:            else if(stricmp(command, "p3lifex")==0){
+openbor.c:            else if(stricmp(command, "p4lifex")==0){
+openbor.c:            else if(stricmp(command, "p1lifen")==0){
+openbor.c:            else if(stricmp(command, "p2lifen")==0){
+openbor.c:            else if(stricmp(command, "p3lifen")==0){
+openbor.c:            else if(stricmp(command, "p4lifen")==0){
+openbor.c:            else if(stricmp(command, "e1life")==0){
+openbor.c:            else if(stricmp(command, "e2life")==0){
+openbor.c:            else if(stricmp(command, "e3life")==0){
+openbor.c:            else if(stricmp(command, "e4life")==0){
+openbor.c:            else if(stricmp(command, "p1icon")==0){
+openbor.c:            else if(stricmp(command, "p2icon")==0){
+openbor.c:            else if(stricmp(command, "p3icon")==0){
+openbor.c:            else if(stricmp(command, "p4icon")==0){
+openbor.c:            else if(stricmp(command, "p1iconw")==0){
+openbor.c:            else if(stricmp(command, "p2iconw")==0){
+openbor.c:            else if(stricmp(command, "p3iconw")==0){
+openbor.c:            else if(stricmp(command, "p4iconw")==0){
+openbor.c:            else if(stricmp(command, "mp1icon")==0){
+openbor.c:            else if(stricmp(command, "mp2icon")==0){
+openbor.c:            else if(stricmp(command, "mp3icon")==0){
+openbor.c:            else if(stricmp(command, "mp4icon")==0){
+openbor.c:            else if(stricmp(command, "p1namej")==0){
+openbor.c:            else if(stricmp(command, "p2namej")==0){
+openbor.c:            else if(stricmp(command, "p3namej")==0){
+openbor.c:            else if(stricmp(command, "p4namej")==0){
+openbor.c:            else if(stricmp(command, "p1score")==0){
+openbor.c:            else if(stricmp(command, "p2score")==0){
+openbor.c:            else if(stricmp(command, "p3score")==0){
+openbor.c:            else if(stricmp(command, "p4score")==0){
+openbor.c:            else if(stricmp(command, "p1shoot")==0){
+openbor.c:            else if(stricmp(command, "p2shoot")==0){
+openbor.c:            else if(stricmp(command, "p3shoot")==0){
+openbor.c:            else if(stricmp(command, "p4shoot")==0){
+openbor.c:            else if(stricmp(command, "p1rush")==0){
+openbor.c:            else if(stricmp(command, "p2rush")==0){
+openbor.c:            else if(stricmp(command, "p3rush")==0){
+openbor.c:            else if(stricmp(command, "p4rush")==0){
+openbor.c:            else if(stricmp(command, "e1icon")==0){
+openbor.c:            else if(stricmp(command, "e2icon")==0){
+openbor.c:            else if(stricmp(command, "e3icon")==0){
+openbor.c:            else if(stricmp(command, "e4icon")==0){
+openbor.c:            else if(stricmp(command, "e1name")==0){
+openbor.c:            else if(stricmp(command, "e2name")==0){
+openbor.c:            else if(stricmp(command, "e3name")==0){
+openbor.c:            else if(stricmp(command, "e4name")==0){
+openbor.c:            else if(stricmp(command, "p1smenu")==0){
+openbor.c:            else if(stricmp(command, "p2smenu")==0){
+openbor.c:            else if(stricmp(command, "p3smenu")==0){
+openbor.c:            else if(stricmp(command, "p4smenu")==0){
+openbor.c:            else if(stricmp(command, "timeicon")==0){
+openbor.c:            else if(stricmp(command, "bgicon")==0){
+openbor.c:			else if(stricmp(command, "olicon")==0){
+openbor.c:            else if(stricmp(command, "timeloc")==0){
+openbor.c:            else if(stricmp(command, "lbarsize")==0){
+openbor.c:			else if(stricmp(command, "olbarsize")==0){
+openbor.c:            else if(stricmp(command, "mpbarsize")==0){
+openbor.c:			else if(stricmp(command, "lbartext")==0){
+openbor.c:			else if(stricmp(command, "mpbartext")==0){
+openbor.c:            else if(stricmp(command, "showcomplete")==0){
+openbor.c:            else if(stricmp(command, "clearbonus")==0){
+openbor.c:			else if(stricmp(command, "rushbonus")==0){
+openbor.c:            else if(stricmp(command, "lifebonus")==0){
+openbor.c:			else if(stricmp(command, "scbonuses")==0){
+openbor.c:            else if(stricmp(command, "totalscore")==0){
+openbor.c:            else if(stricmp(command, "musicoverlap")==0){
+openbor.c:			else if(stricmp(command, "showrushbonus")==0){
+openbor.c:            else if(stricmp(command, "noslowfx")==0){
+openbor.c:            else if(stricmp(command, "equalairpause")==0){
+openbor.c:            else if(stricmp(command, "hiscorebg")==0){
+openbor.c:            else if(stricmp(command, "completebg")==0){
+openbor.c:			else if(stricmp(command, "loadingbg")==0){
+openbor.c:			else if(stricmp(command, "loadingbg2")==0){
+openbor.c:			else if(stricmp(command, "loadingmusic")==0){
+openbor.c:            else if(stricmp(command, "unlockbg")==0){
+openbor.c:            else if(stricmp(command, "noshare")==0){
+openbor.c:            else if(stricmp(command, "custfade")==0){
+openbor.c:			else if(stricmp(command, "continuescore")==0){
+openbor.c:            else if(stricmp(command, "credits")==0){
+openbor.c:            else if(stricmp(command, "typemp")==0){
+openbor.c:            else if(stricmp(command, "single")==0){
+openbor.c:            else if(stricmp(command, "maxplayers")==0){
+openbor.c:            else if(stricmp(command, "nosame")==0){
+openbor.c:            else if(stricmp(command, "rush")==0){
+openbor.c:            else if(stricmp(command, "maxwallheight")==0){
+openbor.c:			else if(stricmp(command, "scoreformat")==0){
+openbor.c:			if(stricmp(command, "loadingbg")==0){
+openbor.c:            else if(stricmp(command, "musicfade")==0){
+openbor.c:			else if(stricmp(command, "music")==0){
+openbor.c:                       command[0] && stricmp(command, "at")==0)
+openbor.c:            else if(stricmp(command, "allowselect")==0)
+openbor.c:            else if(stricmp(command, "load")==0){
+openbor.c:            else if(stricmp(command, "background")==0){
+openbor.c:            else if(stricmp(command, "bglayer") == 0){
+openbor.c:            else if(stricmp(command, "fglayer") == 0){
+openbor.c:            else if(stricmp(command, "water")==0){
+openbor.c:            else if(stricmp(command, "direction")==0){
+openbor.c:                if(stricmp(value, "up")==0) level->scrolldir = SCROLL_UP;
+openbor.c:                else if(stricmp(value, "down")==0) level->scrolldir = SCROLL_DOWN;
+openbor.c:                else if(stricmp(value, "left")==0) level->scrolldir = SCROLL_LEFT;
+openbor.c:                else if(stricmp(value, "both")==0 || stricmp(value, "rightleft")==0) level->scrolldir = SCROLL_BOTH;
+openbor.c:                else if(stricmp(value, "leftright")==0) level->scrolldir = SCROLL_LEFTRIGHT;
+openbor.c:                else if(stricmp(value, "right")==0) level->scrolldir = SCROLL_RIGHT;
+openbor.c:                else if(stricmp(value, "in")==0) level->scrolldir = SCROLL_INWARD;
+openbor.c:                else if(stricmp(value, "out")==0) level->scrolldir = SCROLL_OUTWARD;
+openbor.c:                else if(stricmp(value, "inout")==0) level->scrolldir = SCROLL_INOUT;
+openbor.c:                else if(stricmp(value, "outin")==0) level->scrolldir = SCROLL_OUTIN;
+openbor.c:            else if(stricmp(command, "facing")==0){
+openbor.c:            else if(stricmp(command, "rock")==0){
+openbor.c:            else if(stricmp(command, "bgspeed")==0){
+openbor.c:            else if(stricmp(command, "mirror")==0){
+openbor.c:            else if(stricmp(command, "bossmusic")==0){
+openbor.c:			else if(stricmp(command, "nopause")==0){
+openbor.c:			else if(stricmp(command, "noscreenshot")==0){
+openbor.c:            else if(stricmp(command, "settime")==0){    // If settime is found, overwrite the default 100 for time limit
+openbor.c:            else if(stricmp(command, "setweap")==0){    // Specify a weapon for each level
+openbor.c:            else if(stricmp(command, "notime")==0){    // Flag to if the time should be displayed 1 = no, else yes
+openbor.c:            else if(stricmp(command, "noreset")==0){    // Flag to if the time should be reset when players respawn 1 = no, else yes
+openbor.c:            else if(stricmp(command, "noslow")==0){    // If set, level will not slow down when bosses are defeated
+openbor.c:            else if(stricmp(command, "type")==0){
+openbor.c:            else if(stricmp(command, "nohit")==0){
+openbor.c:            else if(stricmp(command, "gravity")==0){
+openbor.c:            else if(stricmp(command, "maxfallspeed")==0){
+openbor.c:            else if(stricmp(command, "maxtossspeed")==0){
+openbor.c:            else if(stricmp(command, "cameratype")==0){
+openbor.c:			else if(stricmp(command, "cameraoffset")==0){
+openbor.c:            else if(stricmp(command, "spawn1")==0){
+openbor.c:            else if(stricmp(command, "spawn2")==0){
+openbor.c:            else if(stricmp(command, "spawn3")==0){
+openbor.c:            else if(stricmp(command, "spawn4")==0){
+openbor.c:            else if(stricmp(command, "frontpanel")==0){
+openbor.c:            else if(stricmp(command, "panel")==0){
+openbor.c:			else if(stricmp(command, "stagenumber")==0){
+openbor.c:            else if(stricmp(command, "order")==0){
+openbor.c:            else if(stricmp(command, "hole")==0){
+openbor.c:            else if(stricmp(command, "wall")==0){
+openbor.c:            else if(stricmp(command, "palette")==0){
+openbor.c:            else if(stricmp(command, "updatescript")==0)
+openbor.c:            else if(stricmp(command, "updatedscript")==0)
+openbor.c:            else if(stricmp(command, "keyscript")==0)
+openbor.c:            else if(stricmp(command, "levelscript")==0)
+openbor.c:            else if(stricmp(command, "endlevelscript")==0)
+openbor.c:            else if(stricmp(command, "blocked")==0){
+openbor.c:            else if(stricmp(command, "endhole")==0){
+openbor.c:            else if(stricmp(command, "wait")==0){
+openbor.c:            else if(stricmp(command, "nojoin")==0){
+openbor.c:            else if(stricmp(command, "canjoin")==0){
+openbor.c:            else if(stricmp(command, "shadowcolor")==0){
+openbor.c:            else if(stricmp(command, "shadowalpha")==0){
+openbor.c:            else if(stricmp(command, "light")==0){
+openbor.c:            else if(stricmp(command, "scrollz")==0 || stricmp(command, "scrollx")==0){
+openbor.c:            else if(stricmp(command, "blockade")==0){
+openbor.c:            else if(stricmp(command, "setpalette")==0){
+openbor.c:            else if(stricmp(command, "group")==0){
+openbor.c:            else if(stricmp(command, "spawn")==0){
+openbor.c:            else if(stricmp(command, "2pspawn")==0){
+openbor.c:            else if(stricmp(command, "3pspawn")==0){
+openbor.c:            else if(stricmp(command, "4pspawn")==0){
+openbor.c:            else if(stricmp(command, "boss")==0){
+openbor.c:            else if(stricmp(command, "flip")==0){
+openbor.c:            else if(stricmp(command, "health")==0){
+openbor.c:            else if(stricmp(command, "2phealth")==0){    // Health the spawned entity will have if 2 people are playing
+openbor.c:            else if(stricmp(command, "3phealth")==0){    // Health the spawned entity will have if 2 people are playing
+openbor.c:            else if(stricmp(command, "4phealth")==0){    // Health the spawned entity will have if 2 people are playing
+openbor.c:            else if(stricmp(command, "mp")==0){        // mp values to put max mp for player by tails
+openbor.c:            else if(stricmp(command, "score")==0){    // So score can be overriden in the levels .txt file
+openbor.c:            else if(stricmp(command, "nolife")==0){    // Flag to determine if entity life is shown when hit
+openbor.c:            else if(stricmp(command, "alias")==0){
+openbor.c:            else if(stricmp(command, "map")==0){
+openbor.c:            else if(stricmp(command, "alpha")==0){
+openbor.c:            else if(stricmp(command, "dying")==0){    // Used to store which remake corresponds with the dying flash
+openbor.c:            else if(stricmp(command, "item")==0){
+openbor.c:            else if(stricmp(command, "2pitem")==0){
+openbor.c:            else if(stricmp(command, "3pitem")==0){
+openbor.c:            else if(stricmp(command, "4pitem")==0){
+openbor.c:            else if(stricmp(command, "itemmap")==0){
+openbor.c:            else if(stricmp(command, "itemhealth")==0){
+openbor.c:            else if(stricmp(command, "itemalias")==0){
+openbor.c:            else if(stricmp(command, "weapon")==0){  //spawn with a weapon 2007-2-12 by UTunnels
+openbor.c:            else if(stricmp(command, "aggression")==0){ // Aggression can be set per spawn.
+openbor.c:            else if(stricmp(command, "credit")==0){
+openbor.c:            else if(stricmp(command, "itemtrans")==0 || stricmp(command, "itemalpha")==0){
+openbor.c:            else if(stricmp(command, "coords")==0){
+openbor.c:            else if(stricmp(command, "spawnscript")==0) // spawn entry script
+openbor.c:						if(stricmp(value, tempnode->filename)==0)
+openbor.c:			else if(stricmp(command, "at")==0){
+openbor.c://if(stricmp(self->name, "os")==0) printf("%d\n", aimove);
+openbor.c:    else if(stricmp(other->modeldata.name, "Time")==0)
+openbor.c:            if(!closing && stricmp(command, "music")==0){
+openbor.c:            else if(!closing && stricmp(command, "animation")==0){
+openbor.c:            else if(stricmp(command, "silence")==0){
+openbor.c:                if(stricmp(command, "music")==0)
+openbor.c:                else if(stricmp(command, "allowselect")==0)
+openbor.c:                else if(stricmp(command, "background")==0)
+openbor.c:                else if(stricmp(command, "load")==0){
+openbor.c:                    if(stricmp(levelorder[which_set][i]->branchname, branch_name)==0)
+openbor.c:			if(stricmp(command, "video")==0){
+openbor.c:			else if(stricmp(command, "scenes")==0){
+openbor.c:			else if(stricmp(command, "backgrounds")==0){
+openbor.c:			else if(stricmp(command, "levels")==0){
+openbor.c:			else if(stricmp(command, "models")==0){
+openbor.c:            else if(stricmp(command, "colourdepth")==0){
+openbor.c:                if(stricmp(value, "8bit")==0)
+openbor.c:                else if(stricmp(value, "16bit")==0) { screenformat=PIXEL_16; bits=16; }
+openbor.c:                else if(stricmp(value, "32bit")==0) { screenformat=PIXEL_32; bits=32; }
+openbor.c:				if(stricmp(command, "disablekey")==0){
+openbor.c:					if(stricmp(findarg(buf+pos, 1), "moveup")==0)
+openbor.c:					else if(stricmp(findarg(buf+pos, 1), "movedown")==0)
+openbor.c:					else if(stricmp(findarg(buf+pos, 1), "moveleft")==0)
+openbor.c:					else if(stricmp(findarg(buf+pos, 1), "moveright")==0)
+openbor.c:					else if(stricmp(findarg(buf+pos, 1), "attack")==0)
+openbor.c:					else if(stricmp(findarg(buf+pos, 1), "attack2") == 0)
+openbor.c:					else if(stricmp(findarg(buf+pos, 1), "attack3") == 0)
+openbor.c:					else if(stricmp(findarg(buf+pos, 1), "attack4") == 0)
+openbor.c:					else if(stricmp(findarg(buf+pos, 1), "jump") == 0)
+openbor.c:					else if(stricmp(findarg(buf+pos, 1), "special") == 0)
+openbor.c:					else if(stricmp(findarg(buf+pos, 1), "start") == 0)
+openbor.c:					else if(stricmp(findarg(buf+pos, 1), "screenshot") == 0)
+openbor.c:				else if(stricmp(command, "renamekey")==0){
+openbor.c:					if(stricmp(findarg(buf+pos, 1), "moveup") == 0)
+openbor.c:					else if(stricmp(findarg(buf+pos, 1), "movedown") == 0)
+openbor.c:					else if(stricmp(findarg(buf+pos, 1), "moveleft") == 0)
+openbor.c:					else if(stricmp(findarg(buf+pos, 1), "moveright") == 0)
+openbor.c:					else if(stricmp(findarg(buf+pos, 1), "attack") == 0)
+openbor.c:					else if(stricmp(findarg(buf+pos, 1), "attack2") == 0)
+openbor.c:					else if(stricmp(findarg(buf+pos, 1), "attack3") == 0)
+openbor.c:					else if(stricmp(findarg(buf+pos, 1), "attack4") == 0)
+openbor.c:					else if(stricmp(findarg(buf+pos, 1), "jump") == 0)
+openbor.c:					else if(stricmp(findarg(buf+pos, 1), "special") == 0)
+openbor.c:					else if(stricmp(findarg(buf+pos, 1), "start") == 0)
+openbor.c:					else if(stricmp(findarg(buf+pos, 1), "screenshot") == 0)
+openbor.c:				else if(stricmp(command, "fontmonospace")==0){
+openborscript.c:        if(stricmp(tempstr, "mode")==0)
+openborscript.c:        else if(stricmp(tempstr, "factor")==0)
+openborscript.c:        else if(stricmp(tempstr, "cap_min")==0)
+openborscript.c:        else if(stricmp(tempstr, "cap_max")==0)
+openborscript.c:        else if(stricmp(tempstr, "range_min")==0)
+openborscript.c:        else if(stricmp(tempstr, "range_max")==0)
+openborscript.c:        if(stricmp(tempstr, "dead")==0)
+openborscript.c:        else if(stricmp(tempstr, "jumping")==0)
+openborscript.c:        else if(stricmp(tempstr, "idling")==0)
+openborscript.c:        else if(stricmp(tempstr, "drop")==0)
+openborscript.c:        else if(stricmp(tempstr, "attacking")==0)
+openborscript.c:        else if(stricmp(tempstr, "getting")==0)
+openborscript.c:        else if(stricmp(tempstr, "turning")==0)
+openborscript.c:        else if(stricmp(tempstr, "charging")==0)
+openborscript.c:        else if(stricmp(tempstr, "blocking")==0)
+openborscript.c:        else if(stricmp(tempstr, "falling")==0)
+openborscript.c:        else if(stricmp(tempstr, "running")==0)
+openborscript.c:        else if(stricmp(tempstr, "inpain")==0)
+openborscript.c:        else if(stricmp(tempstr, "projectile")==0)
+openborscript.c:        else if(stricmp(tempstr, "frozen")==0)
+openborscript.c:        else if(stricmp(tempstr, "freezetime")==0)
+openborscript.c:        else if(stricmp(tempstr, "toexplode")==0)
+openborscript.c:        else if(stricmp(tempstr, "animating")==0)
+openborscript.c:        else if(stricmp(tempstr, "blink")==0)
+openborscript.c:        else if(stricmp(tempstr, "invincible")==0)
+openborscript.c:        else if(stricmp(tempstr, "autokill")==0)
+openborscript.c:        if(stricmp(tempstr, "factor")==0)
+openborscript.c:        else if(stricmp(tempstr, "blockpower")==0)
+openborscript.c:        else if(stricmp(tempstr, "blockratio")==0)
+openborscript.c:        else if(stricmp(tempstr, "blockthreshold")==0)
+openborscript.c:        else if(stricmp(tempstr, "blocktype")==0)
+openborscript.c:        else if(stricmp(tempstr, "knockdown")==0)
+openborscript.c:        else if(stricmp(tempstr, "pain")==0)
+openborscript.c:        if(stricmp(tempstr, "speed")==0)
+openborscript.c:        else if(stricmp(tempstr, "jumpY")==0)
+openborscript.c:        else if(stricmp(tempstr, "jumpX")==0)
+openborscript.c:        else if(stricmp(tempstr, "land")==0)
+openborscript.c:        else if(stricmp(tempstr, "moveZ")==0)
+openborscript.c:        if(stricmp(tempstr, "time")==0)
+openborscript.c:        else if(stricmp(tempstr, "mode")==0)
+openborscript.c:        else if(stricmp(tempstr, "force")==0)
+openborscript.c:        else if(stricmp(tempstr, "rate")==0)
+openborscript.c:        else if(stricmp(tempstr, "type")==0)
+openborscript.c:        else if(stricmp(tempstr, "owner")==0)
+openborscript.c:        if(stricmp(tempstr, "common_spawn")==0)
+openborscript.c:        else if(stricmp(tempstr, "common_attack_proc")==0)
+openborscript.c:        else if(stricmp(tempstr, "common_jump")==0)
+openborscript.c:        else if(stricmp(tempstr, "common_drop")==0)
+openborscript.c:        else if(stricmp(tempstr, "common_fall")==0)
+openborscript.c:        else if(stricmp(tempstr, "common_block")==0)
+openborscript.c:        else if(stricmp(tempstr, "common_pain")==0)
+openborscript.c:        else if(stricmp(tempstr, "common_turn")==0)
+openborscript.c:        else if(stricmp(tempstr, "common_land")==0)
+openborscript.c:        else if(stricmp(tempstr, "common_lie")==0)
+openborscript.c:        else if(stricmp(tempstr, "player_blink")==0)
+openborscript.c:        else if(stricmp(tempstr, "suicide")==0)
+openborscript.c:        else if(stricmp(tempstr, "common_rise")==0)
+openborscript.c:        else if(stricmp(tempstr, "common_grabbed")==0)
+openborscript.c:        else if(stricmp(tempstr, "common_grabattack")==0)
+openborscript.c:        else if(stricmp(tempstr, "common_grab")==0)
+openborscript.c:        else if(stricmp(tempstr, "common_vault")==0)
+openborscript.c:        else if(stricmp(tempstr, "normal_prepare")==0)
+openborscript.c:        else if(stricmp(tempstr, "bomb_explode")==0)
+openborscript.c:        else if(stricmp(tempstr, "npc_warp")==0)
+openborscript.c:        else if(stricmp(tempstr, "common_prejump")==0)
+openborscript.c:        else if(stricmp(tempstr, "common_get")==0)
+openborscript.c:                    if(stricmp(tempstr, "TYPE_ENEMY")==0)
+openborscript.c:                     if(stricmp(tempstr, "TYPE_PLAYER")==0)
+openborscript.c:                     if(stricmp(tempstr, "TYPE_OBSTACLE")==0)
+openborscript.c:                     if(stricmp(tempstr, "TYPE_SHOT")==0)
+openborscript.c:                     if(stricmp(tempstr, "TYPE_NPC")==0)
+openborscript.c:                     if(stricmp(tempstr, "ground")==0) // not really needed, though
+openborscript.c:                    if(stricmp(tempstr, "TYPE_ENEMY")==0)
+openborscript.c:                     if(stricmp(tempstr, "TYPE_PLAYER")==0)
+openborscript.c:                     if(stricmp(tempstr, "TYPE_OBSTACLE")==0)
+openborscript.c:                     if(stricmp(tempstr, "TYPE_SHOT")==0)
+openborscript.c:                     if(stricmp(tempstr, "TYPE_NPC")==0)
+openborscript.c:        if(stricmp(tempstr, "dead")==0)
+openborscript.c:        else if(stricmp(tempstr, "jumping")==0)
+openborscript.c:        else if(stricmp(tempstr, "idling")==0)
+openborscript.c:        else if(stricmp(tempstr, "drop")==0)
+openborscript.c:        else if(stricmp(tempstr, "attacking")==0)
+openborscript.c:        else if(stricmp(tempstr, "getting")==0)
+openborscript.c:        else if(stricmp(tempstr, "turning")==0)
+openborscript.c:        else if(stricmp(tempstr, "charging")==0)
+openborscript.c:        else if(stricmp(tempstr, "blocking")==0)
+openborscript.c:        else if(stricmp(tempstr, "falling")==0)
+openborscript.c:        else if(stricmp(tempstr, "running")==0)
+openborscript.c:        else if(stricmp(tempstr, "inpain")==0)
+openborscript.c:        else if(stricmp(tempstr, "projectile")==0)
+openborscript.c:        else if(stricmp(tempstr, "frozen")==0)
+openborscript.c:        else if(stricmp(tempstr, "toexplode")==0)
+openborscript.c:        else if(stricmp(tempstr, "animating")==0)
+openborscript.c:        else if(stricmp(tempstr, "blink")==0)
+openborscript.c:        else if(stricmp(tempstr, "invincible")==0)
+openborscript.c:        else if(stricmp(tempstr, "autokill")==0)
+openborscript.c:    else if(stricmp(propname, "name")==0)
+openborscript.c:    else if(stricmp(propname, "name")==0)
+openborscript.c:    if(stricmp(argtype, "string")==0)
+openborscript.c:    else if(stricmp(argtype, "int")==0)
+openborscript.c:    else if(stricmp(argtype, "float")==0)
+openborscript.c:if(stricmp(#x, constname)==0) {\
+openborscript.c:            if(stricmp(StrCache_Get(arg->strVal), "jump")==0)
+openborscript.c:            else if(stricmp(StrCache_Get(arg->strVal), "attack")==0)
+openborscript.c:            else if(stricmp(StrCache_Get(arg->strVal), "attack2")==0)
+openborscript.c:            else if(stricmp(StrCache_Get(arg->strVal), "attack3")==0)
+openborscript.c:            else if(stricmp(StrCache_Get(arg->strVal), "attack4")==0)
+openborscript.c:            else if(stricmp(StrCache_Get(arg->strVal), "special")==0)
+openborscript.c:            else if(stricmp(StrCache_Get(arg->strVal), "esc")==0)
+openborscript.c:            else if(stricmp(StrCache_Get(arg->strVal), "start")==0)
+openborscript.c:            else if(stricmp(StrCache_Get(arg->strVal), "moveleft")==0)
+openborscript.c:            else if(stricmp(StrCache_Get(arg->strVal), "moveright")==0)
+openborscript.c:            else if(stricmp(StrCache_Get(arg->strVal), "moveup")==0)
+openborscript.c:            else if(stricmp(StrCache_Get(arg->strVal), "movedown")==0)
+openborscript.c:            else if(stricmp(StrCache_Get(arg->strVal), "SCREENSHOT")==0)
+openborscript.c:            else if(stricmp(StrCache_Get(arg->strVal), "ANYBUTTON")==0)
+ps2/.svn/text-base/bor.c.svn-base:	if(stricmp(image1,image2)==0) return 0;
+ps2/.svn/text-base/bor.c.svn-base:	if(stricmp(filename_normal,"none")!=0 && *filename_normal){
+ps2/.svn/text-base/bor.c.svn-base:	if(stricmp(filename_neon,"none")!=0 && *filename_neon){
+ps2/.svn/text-base/bor.c.svn-base:	if(stricmp(filename_screen,"none")!=0 && *filename_screen){
+ps2/.svn/text-base/bor.c.svn-base:		if(stricmp(model_list[i]->name, name)==0){
+ps2/.svn/text-base/bor.c.svn-base:		if(stricmp(name, model_cache[i]->name)==0){
+ps2/.svn/text-base/bor.c.svn-base:		if(stricmp(name, model_cache[i]->name)==0){
+ps2/.svn/text-base/bor.c.svn-base:			if(stricmp(command, "name")==0){
+ps2/.svn/text-base/bor.c.svn-base:			else if(stricmp(command, "health")==0){
+ps2/.svn/text-base/bor.c.svn-base:			else if(stricmp(command, "load")==0){
+ps2/.svn/text-base/bor.c.svn-base:			else if(stricmp(command, "score")==0){
+ps2/.svn/text-base/bor.c.svn-base:			else if(stricmp(command, "secret")==0){
+ps2/.svn/text-base/bor.c.svn-base:			else if(stricmp(command, "speed")==0){
+ps2/.svn/text-base/bor.c.svn-base:			else if(stricmp(command, "shadow")==0){
+ps2/.svn/text-base/bor.c.svn-base:			else if(stricmp(command, "diesound")==0){
+ps2/.svn/text-base/bor.c.svn-base:			else if(stricmp(command, "icon")==0){
+ps2/.svn/text-base/bor.c.svn-base:			else if(stricmp(command, "type")==0){
+ps2/.svn/text-base/bor.c.svn-base:				if(stricmp(value, "none")==0){
+ps2/.svn/text-base/bor.c.svn-base:				else if(stricmp(value, "player")==0){
+ps2/.svn/text-base/bor.c.svn-base:				else if(stricmp(value, "enemy")==0){
+ps2/.svn/text-base/bor.c.svn-base:				else if(stricmp(value, "item")==0){
+ps2/.svn/text-base/bor.c.svn-base:				else if(stricmp(value, "obstacle")==0){
+ps2/.svn/text-base/bor.c.svn-base:				else if(stricmp(value, "steamer")==0){
+ps2/.svn/text-base/bor.c.svn-base:			else if(stricmp(command, "subtype")==0){
+ps2/.svn/text-base/bor.c.svn-base:				if(stricmp(value, "biker")==0){
+ps2/.svn/text-base/bor.c.svn-base:			else if(stricmp(command, "remap")==0){
+ps2/.svn/text-base/bor.c.svn-base:			else if(stricmp(command, "anim")==0){
+ps2/.svn/text-base/bor.c.svn-base:				if(stricmp(value, "idle")==0){
+ps2/.svn/text-base/bor.c.svn-base:				else if(stricmp(value, "walk")==0){
+ps2/.svn/text-base/bor.c.svn-base:				else if(stricmp(value, "jump")==0){
+ps2/.svn/text-base/bor.c.svn-base:				else if(stricmp(value, "land")==0){
+ps2/.svn/text-base/bor.c.svn-base:				else if(stricmp(value, "pain")==0){
+ps2/.svn/text-base/bor.c.svn-base:				else if(stricmp(value, "fall")==0){
+ps2/.svn/text-base/bor.c.svn-base:				else if(stricmp(value, "rise")==0){
+ps2/.svn/text-base/bor.c.svn-base:				else if(stricmp(value, "attack1")==0){
+ps2/.svn/text-base/bor.c.svn-base:				else if(stricmp(value, "attack2")==0){
+ps2/.svn/text-base/bor.c.svn-base:				else if(stricmp(value, "attack3")==0){
+ps2/.svn/text-base/bor.c.svn-base:				else if(stricmp(value, "upper")==0){
+ps2/.svn/text-base/bor.c.svn-base:				else if(stricmp(value, "slide")==0){
+ps2/.svn/text-base/bor.c.svn-base:				else if(stricmp(value, "special")==0){
+ps2/.svn/text-base/bor.c.svn-base:				else if(stricmp(value, "freespecial")==0){
+ps2/.svn/text-base/bor.c.svn-base:				else if(stricmp(value, "jumpattack")==0){
+ps2/.svn/text-base/bor.c.svn-base:				else if(stricmp(value, "jumpattack2")==0){
+ps2/.svn/text-base/bor.c.svn-base:				else if(stricmp(value, "get")==0){
+ps2/.svn/text-base/bor.c.svn-base:				else if(stricmp(value, "grab")==0){
+ps2/.svn/text-base/bor.c.svn-base:				else if(stricmp(value, "grabattack")==0){
+ps2/.svn/text-base/bor.c.svn-base:				else if(stricmp(value, "grabattack2")==0){
+ps2/.svn/text-base/bor.c.svn-base:				else if(stricmp(value, "throw")==0){
+ps2/.svn/text-base/bor.c.svn-base:			else if(stricmp(command, "loop")==0){
+ps2/.svn/text-base/bor.c.svn-base:			else if(stricmp(command, "delay")==0){
+ps2/.svn/text-base/bor.c.svn-base:			else if(stricmp(command, "offset")==0){
+ps2/.svn/text-base/bor.c.svn-base:			else if(stricmp(command, "throwframe")==0){
+ps2/.svn/text-base/bor.c.svn-base:			else if(stricmp(command, "shootframe")==0){
+ps2/.svn/text-base/bor.c.svn-base:			else if(stricmp(command, "jumpframe")==0){
+ps2/.svn/text-base/bor.c.svn-base:			else if(stricmp(command, "sound")==0){
+ps2/.svn/text-base/bor.c.svn-base:			else if(stricmp(command, "bbox")==0){
+ps2/.svn/text-base/bor.c.svn-base:			else if(stricmp(command, "attack")==0){
+ps2/.svn/text-base/bor.c.svn-base:			else if(stricmp(command, "blast")==0){
+ps2/.svn/text-base/bor.c.svn-base:			else if(stricmp(command, "burn")==0){
+ps2/.svn/text-base/bor.c.svn-base:			else if(stricmp(command, "move")==0){
+ps2/.svn/text-base/bor.c.svn-base:			else if(stricmp(command, "range")==0){
+ps2/.svn/text-base/bor.c.svn-base:			else if(stricmp(command, "frame")==0){
+ps2/.svn/text-base/bor.c.svn-base:			if(stricmp(command, "load")==0){
+ps2/.svn/text-base/bor.c.svn-base:			else if(stricmp(command, "know")==0){
+ps2/.svn/text-base/bor.c.svn-base:			if(stricmp(command, "set")==0){
+ps2/.svn/text-base/bor.c.svn-base:			else if(stricmp(command, "ifcomplete")==0){
+ps2/.svn/text-base/bor.c.svn-base:			else if(stricmp(command, "file")==0){
+ps2/.svn/text-base/bor.c.svn-base:			else if(stricmp(command, "scene")==0){
+ps2/.svn/text-base/bor.c.svn-base:			else if(stricmp(command, "next")==0){
+ps2/.svn/text-base/bor.c.svn-base:			if(stricmp(command, "background")==0){
+ps2/.svn/text-base/bor.c.svn-base:			else if(stricmp(command, "water")==0){
+ps2/.svn/text-base/bor.c.svn-base:			else if(stricmp(command, "direction")==0){
+ps2/.svn/text-base/bor.c.svn-base:				if(stricmp(value, "up")==0) level->scrolldir = SCROLL_UP;
+ps2/.svn/text-base/bor.c.svn-base:				else if(stricmp(value, "down")==0) level->scrolldir = SCROLL_DOWN;
+ps2/.svn/text-base/bor.c.svn-base:				else if(stricmp(value, "left")==0) level->scrolldir = SCROLL_LEFT;
+ps2/.svn/text-base/bor.c.svn-base:			else if(stricmp(command, "rock")==0){
+ps2/.svn/text-base/bor.c.svn-base:			else if(stricmp(command, "mirror")==0){
+ps2/.svn/text-base/bor.c.svn-base:			else if(stricmp(command, "music")==0){
+ps2/.svn/text-base/bor.c.svn-base:			else if(stricmp(command, "bossmusic")==0){
+ps2/.svn/text-base/bor.c.svn-base:			else if(stricmp(command, "frontpanel")==0){
+ps2/.svn/text-base/bor.c.svn-base:			else if(stricmp(command, "panel")==0){
+ps2/.svn/text-base/bor.c.svn-base:			else if(stricmp(command, "order")==0){
+ps2/.svn/text-base/bor.c.svn-base:			else if(stricmp(command, "hole")==0){
+ps2/.svn/text-base/bor.c.svn-base:			else if(stricmp(command, "blocked")==0){
+ps2/.svn/text-base/bor.c.svn-base:			else if(stricmp(command, "endhole")==0){
+ps2/.svn/text-base/bor.c.svn-base:			else if(stricmp(command, "wait")==0){
+ps2/.svn/text-base/bor.c.svn-base:			else if(stricmp(command, "group")==0){
+ps2/.svn/text-base/bor.c.svn-base:			else if(stricmp(command, "spawn")==0){
+ps2/.svn/text-base/bor.c.svn-base:			else if(stricmp(command, "boss")==0){
+ps2/.svn/text-base/bor.c.svn-base:			else if(stricmp(command, "flip")==0){
+ps2/.svn/text-base/bor.c.svn-base:			else if(stricmp(command, "health")==0){
+ps2/.svn/text-base/bor.c.svn-base:			else if(stricmp(command, "alias")==0){
+ps2/.svn/text-base/bor.c.svn-base:			else if(stricmp(command, "map")==0){
+ps2/.svn/text-base/bor.c.svn-base:			else if(stricmp(command, "item")==0){
+ps2/.svn/text-base/bor.c.svn-base:			else if(stricmp(command, "2pitem")==0){
+ps2/.svn/text-base/bor.c.svn-base:			else if(stricmp(command, "coords")==0){
+ps2/.svn/text-base/bor.c.svn-base:			else if(stricmp(command, "at")==0){
+ps2/.svn/text-base/bor.c.svn-base:			else if(stricmp(other->model->name, "Time")==0){
+ps2/.svn/text-base/bor.c.svn-base:			if(!closing && stricmp(command, "music")==0){
+ps2/.svn/text-base/bor.c.svn-base:			else if(!closing && stricmp(command, "animation")==0){
+ps2/.svn/text-base/bor.c.svn-base:			else if(stricmp(command, "silence")==0){
+ps2/.svn/text-base/bor.c.svn-base:		if(stricmp(argv[i], "-res")==0 && argc>=i+3){
+ps2/.svn/text-base/bor.c.svn-base:		else if(stricmp(argv[i], "-pak")==0 && argc>=i+2){
+ps2/bor.c:	if(stricmp(image1,image2)==0) return 0;
+ps2/bor.c:	if(stricmp(filename_normal,"none")!=0 && *filename_normal){
+ps2/bor.c:	if(stricmp(filename_neon,"none")!=0 && *filename_neon){
+ps2/bor.c:	if(stricmp(filename_screen,"none")!=0 && *filename_screen){
+ps2/bor.c:		if(stricmp(model_list[i]->name, name)==0){
+ps2/bor.c:		if(stricmp(name, model_cache[i]->name)==0){
+ps2/bor.c:		if(stricmp(name, model_cache[i]->name)==0){
+ps2/bor.c:			if(stricmp(command, "name")==0){
+ps2/bor.c:			else if(stricmp(command, "health")==0){
+ps2/bor.c:			else if(stricmp(command, "load")==0){
+ps2/bor.c:			else if(stricmp(command, "score")==0){
+ps2/bor.c:			else if(stricmp(command, "secret")==0){
+ps2/bor.c:			else if(stricmp(command, "speed")==0){
+ps2/bor.c:			else if(stricmp(command, "shadow")==0){
+ps2/bor.c:			else if(stricmp(command, "diesound")==0){
+ps2/bor.c:			else if(stricmp(command, "icon")==0){
+ps2/bor.c:			else if(stricmp(command, "type")==0){
+ps2/bor.c:				if(stricmp(value, "none")==0){
+ps2/bor.c:				else if(stricmp(value, "player")==0){
+ps2/bor.c:				else if(stricmp(value, "enemy")==0){
+ps2/bor.c:				else if(stricmp(value, "item")==0){
+ps2/bor.c:				else if(stricmp(value, "obstacle")==0){
+ps2/bor.c:				else if(stricmp(value, "steamer")==0){
+ps2/bor.c:			else if(stricmp(command, "subtype")==0){
+ps2/bor.c:				if(stricmp(value, "biker")==0){
+ps2/bor.c:			else if(stricmp(command, "remap")==0){
+ps2/bor.c:			else if(stricmp(command, "anim")==0){
+ps2/bor.c:				if(stricmp(value, "idle")==0){
+ps2/bor.c:				else if(stricmp(value, "walk")==0){
+ps2/bor.c:				else if(stricmp(value, "jump")==0){
+ps2/bor.c:				else if(stricmp(value, "land")==0){
+ps2/bor.c:				else if(stricmp(value, "pain")==0){
+ps2/bor.c:				else if(stricmp(value, "fall")==0){
+ps2/bor.c:				else if(stricmp(value, "rise")==0){
+ps2/bor.c:				else if(stricmp(value, "attack1")==0){
+ps2/bor.c:				else if(stricmp(value, "attack2")==0){
+ps2/bor.c:				else if(stricmp(value, "attack3")==0){
+ps2/bor.c:				else if(stricmp(value, "upper")==0){
+ps2/bor.c:				else if(stricmp(value, "slide")==0){
+ps2/bor.c:				else if(stricmp(value, "special")==0){
+ps2/bor.c:				else if(stricmp(value, "freespecial")==0){
+ps2/bor.c:				else if(stricmp(value, "jumpattack")==0){
+ps2/bor.c:				else if(stricmp(value, "jumpattack2")==0){
+ps2/bor.c:				else if(stricmp(value, "get")==0){
+ps2/bor.c:				else if(stricmp(value, "grab")==0){
+ps2/bor.c:				else if(stricmp(value, "grabattack")==0){
+ps2/bor.c:				else if(stricmp(value, "grabattack2")==0){
+ps2/bor.c:				else if(stricmp(value, "throw")==0){
+ps2/bor.c:			else if(stricmp(command, "loop")==0){
+ps2/bor.c:			else if(stricmp(command, "delay")==0){
+ps2/bor.c:			else if(stricmp(command, "offset")==0){
+ps2/bor.c:			else if(stricmp(command, "throwframe")==0){
+ps2/bor.c:			else if(stricmp(command, "shootframe")==0){
+ps2/bor.c:			else if(stricmp(command, "jumpframe")==0){
+ps2/bor.c:			else if(stricmp(command, "sound")==0){
+ps2/bor.c:			else if(stricmp(command, "bbox")==0){
+ps2/bor.c:			else if(stricmp(command, "attack")==0){
+ps2/bor.c:			else if(stricmp(command, "blast")==0){
+ps2/bor.c:			else if(stricmp(command, "burn")==0){
+ps2/bor.c:			else if(stricmp(command, "move")==0){
+ps2/bor.c:			else if(stricmp(command, "range")==0){
+ps2/bor.c:			else if(stricmp(command, "frame")==0){
+ps2/bor.c:			if(stricmp(command, "load")==0){
+ps2/bor.c:			else if(stricmp(command, "know")==0){
+ps2/bor.c:			if(stricmp(command, "set")==0){
+ps2/bor.c:			else if(stricmp(command, "ifcomplete")==0){
+ps2/bor.c:			else if(stricmp(command, "file")==0){
+ps2/bor.c:			else if(stricmp(command, "scene")==0){
+ps2/bor.c:			else if(stricmp(command, "next")==0){
+ps2/bor.c:			if(stricmp(command, "background")==0){
+ps2/bor.c:			else if(stricmp(command, "water")==0){
+ps2/bor.c:			else if(stricmp(command, "direction")==0){
+ps2/bor.c:				if(stricmp(value, "up")==0) level->scrolldir = SCROLL_UP;
+ps2/bor.c:				else if(stricmp(value, "down")==0) level->scrolldir = SCROLL_DOWN;
+ps2/bor.c:				else if(stricmp(value, "left")==0) level->scrolldir = SCROLL_LEFT;
+ps2/bor.c:			else if(stricmp(command, "rock")==0){
+ps2/bor.c:			else if(stricmp(command, "mirror")==0){
+ps2/bor.c:			else if(stricmp(command, "music")==0){
+ps2/bor.c:			else if(stricmp(command, "bossmusic")==0){
+ps2/bor.c:			else if(stricmp(command, "frontpanel")==0){
+ps2/bor.c:			else if(stricmp(command, "panel")==0){
+ps2/bor.c:			else if(stricmp(command, "order")==0){
+ps2/bor.c:			else if(stricmp(command, "hole")==0){
+ps2/bor.c:			else if(stricmp(command, "blocked")==0){
+ps2/bor.c:			else if(stricmp(command, "endhole")==0){
+ps2/bor.c:			else if(stricmp(command, "wait")==0){
+ps2/bor.c:			else if(stricmp(command, "group")==0){
+ps2/bor.c:			else if(stricmp(command, "spawn")==0){
+ps2/bor.c:			else if(stricmp(command, "boss")==0){
+ps2/bor.c:			else if(stricmp(command, "flip")==0){
+ps2/bor.c:			else if(stricmp(command, "health")==0){
+ps2/bor.c:			else if(stricmp(command, "alias")==0){
+ps2/bor.c:			else if(stricmp(command, "map")==0){
+ps2/bor.c:			else if(stricmp(command, "item")==0){
+ps2/bor.c:			else if(stricmp(command, "2pitem")==0){
+ps2/bor.c:			else if(stricmp(command, "coords")==0){
+ps2/bor.c:			else if(stricmp(command, "at")==0){
+ps2/bor.c:			else if(stricmp(other->model->name, "Time")==0){
+ps2/bor.c:			if(!closing && stricmp(command, "music")==0){
+ps2/bor.c:			else if(!closing && stricmp(command, "animation")==0){
+ps2/bor.c:			else if(stricmp(command, "silence")==0){
+ps2/bor.c:		if(stricmp(argv[i], "-res")==0 && argc>=i+3){
+ps2/bor.c:		else if(stricmp(argv[i], "-pak")==0 && argc>=i+2){
+psp/menu.c:            if(stricmp(filelist[i].filename, filelist[i+1].filename)>0)
+psp/.svn/text-base/netcomm.c.svn-base:			if(stricmp(pspList[i].srcMac, srcMac)==0) return 0;
+psp/.svn/text-base/menu.c.svn-base:            if(stricmp(filelist[i].filename, filelist[i+1].filename)>0)
+psp/netcomm.c:			if(stricmp(pspList[i].srcMac, srcMac)==0) return 0;
+sdl/menu.c~:            if(stricmp(filelist[i].filename, filelist[i+1].filename)>0)
+sdl/menu.c:            if(stricmp(filelist[i].filename, filelist[i+1].filename)>0)
+sdl/.svn/text-base/menu.c.svn-base:            if(stricmp(filelist[i].filename, filelist[i+1].filename)>0)
+source/utils.c:		if(stristr(oFindData.cFileName, ".pak") && stricmp(oFindData.cFileName, "menu.pak") != 0)
+source/utils.c:		if(stricmp(list[b], value) == 0) return b;
+source/utils.c:				if(stricmp(list[i], value) == 0) return i;
+source/utils.c:				if(stricmp(list[i], value) == 0) return i;
+source/utils.c:            if(stricmp(list[i], value) == 0) return i;
+source/gamelib/packfile.c:		if(stricmp(filename,pn.namebuf)==0)
+source/gamelib/packfile.c:	if(stricmp(ds->d_name, "menu.pak") != 0)
+source/gamelib/packfile.c:				if((p && !stricmp(p, ".bor")) || (stristr(pn.namebuf, "music"))) {
+source/gamelib/soundmix.c:        if(stricmp(filename, soundcache[i].filename)==0) return soundcache[i].index;
+source/gamelib/.svn/text-base/packfile.c.svn-base:		if(stricmp(filename,pn.namebuf)==0)
+source/gamelib/.svn/text-base/packfile.c.svn-base:	if(stricmp(ds->d_name, "menu.pak") != 0)
+source/gamelib/.svn/text-base/packfile.c.svn-base:				if((p && !stricmp(p, ".bor")) || (stristr(pn.namebuf, "music"))) {
+source/gamelib/.svn/text-base/soundmix.c.svn-base:        if(stricmp(filename, soundcache[i].filename)==0) return soundcache[i].index;
+source/.svn/text-base/utils.c.svn-base:		if(stristr(oFindData.cFileName, ".pak") && stricmp(oFindData.cFileName, "menu.pak") != 0)
+source/.svn/text-base/utils.c.svn-base:		if(stricmp(list[b], value) == 0) return b;
+source/.svn/text-base/utils.c.svn-base:				if(stricmp(list[i], value) == 0) return i;
+source/.svn/text-base/utils.c.svn-base:				if(stricmp(list[i], value) == 0) return i;
+source/.svn/text-base/utils.c.svn-base:            if(stricmp(list[i], value) == 0) return i;
+tools/borplay/borplay.c:        if((p && !stricmp(p, ".bor")) || (stristr(pn.namebuf, "music"))) {
+tools/borplay/.svn/text-base/borplay.c.svn-base:        if((p && !stricmp(p, ".bor")) || (stristr(pn.namebuf, "music"))) {
+tools/PackListCreator/PackListCreator.c:			if((stricmp(packfile, ds->d_name) != 0) && 
+tools/PackListCreator/.svn/text-base/PackListCreator.c.svn-base:			if((stricmp(packfile, ds->d_name) != 0) && 
+xbox/common/src/xbresource.cpp:        if( !_stricmp( strName, m_pResourceTags[i].strName ) )
+xbox/common/src/.svn/text-base/xbresource.cpp.svn-base:        if( !_stricmp( strName, m_pResourceTags[i].strName ) )

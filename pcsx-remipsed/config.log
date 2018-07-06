@@ -1,0 +1,30 @@
+mipsel-linux-gcc /tmp/pcsx-conf--15847-.c -o /tmp/pcsx-conf--15847- -ldl -lm -lpthread
+mipsel-linux-gcc -march=mips32 -mno-abicalls -DUSE_JZ47XX -DRAM_FIXED /tmp/pcsx-conf--15847-.c -o /tmp/pcsx-conf--15847- -ldl -lm -lpthread -lz
+/home/steward/Downloads/buildroot-2016.05/output/host/usr/lib/gcc/mipsel-buildroot-linux-uclibc/4.9.3/../../../../mipsel-buildroot-linux-uclibc/bin/ld: /tmp/ccgdRlnm.o: warning: linking abicalls files with non-abicalls files
+mipsel-linux-gcc -march=mips32 -mno-abicalls -DUSE_JZ47XX -DRAM_FIXED /tmp/pcsx-conf--15847-.c -o /tmp/pcsx-conf--15847- -lpng -ldl -lm -lpthread -lz
+/home/steward/Downloads/buildroot-2016.05/output/host/usr/lib/gcc/mipsel-buildroot-linux-uclibc/4.9.3/../../../../mipsel-buildroot-linux-uclibc/bin/ld: /tmp/ccErLBD7.o: warning: linking abicalls files with non-abicalls files
+mipsel-linux-gcc -march=mips32 -mno-abicalls -DUSE_JZ47XX -DRAM_FIXED /tmp/pcsx-conf--15847-.c -o /tmp/pcsx-conf--15847- -lpng -ldl -lm -lpthread -lz
+/home/steward/Downloads/buildroot-2016.05/output/host/usr/lib/gcc/mipsel-buildroot-linux-uclibc/4.9.3/../../../../mipsel-buildroot-linux-uclibc/bin/ld: /tmp/ccStvCow.o: warning: linking abicalls files with non-abicalls files
+mipsel-linux-gcc -march=mips32 -mno-abicalls -DUSE_JZ47XX -DRAM_FIXED /tmp/pcsx-conf--15847-.c -o /tmp/pcsx-conf--15847- -lasound -lpng -ldl -lm -lpthread -lz
+/home/steward/Downloads/buildroot-2016.05/output/host/usr/lib/gcc/mipsel-buildroot-linux-uclibc/4.9.3/../../../../mipsel-buildroot-linux-uclibc/bin/ld: /tmp/ccqRaU6n.o: warning: linking abicalls files with non-abicalls files
+mipsel-linux-gcc -march=mips32 -mno-abicalls -DUSE_JZ47XX -DRAM_FIXED -c /tmp/pcsx-conf--15847-.c -o /tmp/pcsx-conf--15847-.o
+/tmp/pcsx-conf--15847-.c:1:21: fatal error: tslib.h: No such file or directory
+   #include <tslib.h>
+                     ^
+compilation terminated.
+mipsel-linux-gcc -march=mips32 -mno-abicalls -DUSE_JZ47XX -DRAM_FIXED /tmp/pcsx-conf--15847-.c -o /tmp/pcsx-conf--15847- -lasound -lpng -ldl -lm -lpthread -lz -lEGL -lGLES_CM
+/tmp/pcsx-conf--15847-.c:1:21: fatal error: GLES/gl.h: No such file or directory
+ #include <GLES/gl.h>
+                     ^
+compilation terminated.
+mipsel-linux-gcc -march=mips32 -mno-abicalls -DUSE_JZ47XX -DRAM_FIXED /tmp/pcsx-conf--15847-.c -o /tmp/pcsx-conf--15847- -lasound -lpng -ldl -lm -lpthread -lz -lEGL -lGLESv1_CM
+/tmp/pcsx-conf--15847-.c:1:21: fatal error: GLES/gl.h: No such file or directory
+ #include <GLES/gl.h>
+                     ^
+compilation terminated.
+mipsel-linux-gcc -march=mips32 -mno-abicalls -DUSE_JZ47XX -DRAM_FIXED -c /tmp/pcsx-conf--15847-.c -o /tmp/pcsx-conf--15847-.o
+/tmp/pcsx-conf--15847-.c:1:31: fatal error: inc_libc64_mini.h: No such file or directory
+   #include <inc_libc64_mini.h>
+                               ^
+compilation terminated.
+mipsel-linux-gcc -march=mips32 -mno-abicalls -DUSE_JZ47XX -DRAM_FIXED -c /tmp/pcsx-conf--15847-.c -o /tmp/pcsx-conf--15847-.o -Wno-unused-result

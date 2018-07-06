@@ -1,0 +1,204 @@
+# Project: OpenBOR
+# Makefile created by Dev-C++ 4.9.9.2
+
+CPP  = g++.exe
+CC   = gcc.exe
+WINDRES = windres.exe
+RES  = OpenBOR_private.res
+OBJ  = ../openbor.o ../source/utils.o ../source/adpcmlib/adpcm.o ../source/gamelib/anigif.o ../source/gamelib/bitmap.o ../source/gamelib/draw.o ../source/gamelib/font.o ../source/gamelib/loadimg.o ../source/gamelib/palette.o ../source/gamelib/screen.o ../source/gamelib/spriteq.o ../source/gamelib/texture.o ../source/memlib/memage.o ../source/pcxlib/savepcx.o ../source/randlib/rand32.o ../source/tracelib/tracemalloc.o ../source/scriptlib/Instruction.o ../source/scriptlib/Interpreter.o ../source/scriptlib/Lexer.o ../source/scriptlib/List.o ../source/scriptlib/Parser.o ../source/scriptlib/ParserSet.o ../source/scriptlib/ScriptVariant.o ../source/scriptlib/Stack.o ../source/scriptlib/StackedSymbolTable.o ../source/scriptlib/SymbolTable.o ../openborscript.o ../source/gamelib/filters.o ../source/gamelib/spritef.o ../source/gamelib/packfile.o ../source/gamelib/filecache.o ../source/stristr.o ../source/gamelib/draw32.o ../source/gamelib/spritex8p32.o ../source/gamelib/screen32.o ../source/gamelib/pixelformat.o ../source/gamelib/texture32.o ../source/gamelib/texture16.o ../source/gamelib/draw16.o ../source/gamelib/screen16.o ../source/gamelib/spritex8p16.o control.o joysticks.o sblaster.o sdlport.o soundmix.o timer.o video.o ../source/gfxlib/simple2x.o ../source/gfxlib/2xSaI.o ../source/gfxlib/bilinear.o ../source/gfxlib/hq2x.o ../source/gfxlib/motionblur.o ../source/gfxlib/scale2x.o ../source/gfxlib/scanline.o ../source/gfxlib/tv2x.o ../source/gfxlib/dotmatrix.o ../source/gfxlib/gfx.o $(RES)
+LINKOBJ  = ../openbor.o ../source/utils.o ../source/adpcmlib/adpcm.o ../source/gamelib/anigif.o ../source/gamelib/bitmap.o ../source/gamelib/draw.o ../source/gamelib/font.o ../source/gamelib/loadimg.o ../source/gamelib/palette.o ../source/gamelib/screen.o ../source/gamelib/spriteq.o ../source/gamelib/texture.o ../source/memlib/memage.o ../source/pcxlib/savepcx.o ../source/randlib/rand32.o ../source/tracelib/tracemalloc.o ../source/scriptlib/Instruction.o ../source/scriptlib/Interpreter.o ../source/scriptlib/Lexer.o ../source/scriptlib/List.o ../source/scriptlib/Parser.o ../source/scriptlib/ParserSet.o ../source/scriptlib/ScriptVariant.o ../source/scriptlib/Stack.o ../source/scriptlib/StackedSymbolTable.o ../source/scriptlib/SymbolTable.o ../openborscript.o ../source/gamelib/filters.o ../source/gamelib/spritef.o ../source/gamelib/packfile.o ../source/gamelib/filecache.o ../source/stristr.o ../source/gamelib/draw32.o ../source/gamelib/spritex8p32.o ../source/gamelib/screen32.o ../source/gamelib/pixelformat.o ../source/gamelib/texture32.o ../source/gamelib/texture16.o ../source/gamelib/draw16.o ../source/gamelib/screen16.o ../source/gamelib/spritex8p16.o control.o joysticks.o sblaster.o sdlport.o soundmix.o timer.o video.o ../source/gfxlib/simple2x.o ../source/gfxlib/2xSaI.o ../source/gfxlib/bilinear.o ../source/gfxlib/hq2x.o ../source/gfxlib/motionblur.o ../source/gfxlib/scale2x.o ../source/gfxlib/scanline.o ../source/gfxlib/tv2x.o ../source/gfxlib/dotmatrix.o ../source/gfxlib/gfx.o $(RES)
+LIBS =  -L"C:/Dev-Cpp/lib" -L"../tools/win-sdk/lib" -mwindows -lSDL -lSDL_image -lSDL_gfx -lpng -lz  
+INCS =  -I"C:/Dev-Cpp/include"  -I"."  -I".."  -I"../source"  -I"../source/adpcmlib"  -I"../source/gamelib"  -I"../source/memlib"  -I"../source/pcxlib"  -I"../source/randlib"  -I"../source/tracelib"  -I"../source/scriptlib"  -I"../tools/win-sdk/include/SDL"  -I"../tools/win-sdk/include/libpng13"  -I"../tools/win-sdk/include"  -I"../source/gfxlib" 
+CXXINCS =  -I"C:/Dev-Cpp/lib/gcc/mingw32/3.4.2/include"  -I"C:/Dev-Cpp/include/c++/3.4.2/backward"  -I"C:/Dev-Cpp/include/c++/3.4.2/mingw32"  -I"C:/Dev-Cpp/include/c++/3.4.2"  -I"C:/Dev-Cpp/include"  -I"."  -I".."  -I"../source"  -I"../source/adpcmlib"  -I"../source/gamelib"  -I"../source/memlib"  -I"../source/pcxlib"  -I"../source/randlib"  -I"../source/tracelib"  -I"../source/scriptlib"  -I"../tools/win-sdk/include/SDL"  -I"../tools/win-sdk/include/libpng13"  -I"../tools/win-sdk/include"  -I"../source/gfxlib" 
+BIN  = OpenBOR.exe
+CXXFLAGS = $(CXXINCS)  
+CFLAGS = $(INCS) -g -O2 -Wall -Werror -DSDL -DWIN -DDEBUG -funsigned-char -fstrict-aliasing -ffast-math -DINLINE="static inline" -DLOWERCASEFILES  
+RM = rm -f
+
+.PHONY: all all-before all-after clean clean-custom
+
+all: all-before OpenBOR.exe all-after
+
+
+clean: clean-custom
+	${RM} $(OBJ) $(BIN)
+
+$(BIN): $(OBJ)
+	$(CC) $(LINKOBJ) -o "OpenBOR.exe" $(LIBS)
+
+../openbor.o: ../openbor.c
+	$(CC) -c ../openbor.c -o ../openbor.o $(CFLAGS)
+
+../source/utils.o: ../source/utils.c
+	$(CC) -c ../source/utils.c -o ../source/utils.o $(CFLAGS)
+
+../source/adpcmlib/adpcm.o: ../source/adpcmlib/adpcm.c
+	$(CC) -c ../source/adpcmlib/adpcm.c -o ../source/adpcmlib/adpcm.o $(CFLAGS)
+
+../source/gamelib/anigif.o: ../source/gamelib/anigif.c
+	$(CC) -c ../source/gamelib/anigif.c -o ../source/gamelib/anigif.o $(CFLAGS)
+
+../source/gamelib/bitmap.o: ../source/gamelib/bitmap.c
+	$(CC) -c ../source/gamelib/bitmap.c -o ../source/gamelib/bitmap.o $(CFLAGS)
+
+../source/gamelib/draw.o: ../source/gamelib/draw.c
+	$(CC) -c ../source/gamelib/draw.c -o ../source/gamelib/draw.o $(CFLAGS)
+
+../source/gamelib/font.o: ../source/gamelib/font.c
+	$(CC) -c ../source/gamelib/font.c -o ../source/gamelib/font.o $(CFLAGS)
+
+../source/gamelib/loadimg.o: ../source/gamelib/loadimg.c
+	$(CC) -c ../source/gamelib/loadimg.c -o ../source/gamelib/loadimg.o $(CFLAGS)
+
+../source/gamelib/palette.o: ../source/gamelib/palette.c
+	$(CC) -c ../source/gamelib/palette.c -o ../source/gamelib/palette.o $(CFLAGS)
+
+../source/gamelib/screen.o: ../source/gamelib/screen.c
+	$(CC) -c ../source/gamelib/screen.c -o ../source/gamelib/screen.o $(CFLAGS)
+
+../source/gamelib/spriteq.o: ../source/gamelib/spriteq.c
+	$(CC) -c ../source/gamelib/spriteq.c -o ../source/gamelib/spriteq.o $(CFLAGS)
+
+../source/gamelib/texture.o: ../source/gamelib/texture.c
+	$(CC) -c ../source/gamelib/texture.c -o ../source/gamelib/texture.o $(CFLAGS)
+
+../source/memlib/memage.o: ../source/memlib/memage.c
+	$(CC) -c ../source/memlib/memage.c -o ../source/memlib/memage.o $(CFLAGS)
+
+../source/pcxlib/savepcx.o: ../source/pcxlib/savepcx.c
+	$(CC) -c ../source/pcxlib/savepcx.c -o ../source/pcxlib/savepcx.o $(CFLAGS)
+
+../source/randlib/rand32.o: ../source/randlib/rand32.c
+	$(CC) -c ../source/randlib/rand32.c -o ../source/randlib/rand32.o $(CFLAGS)
+
+../source/tracelib/tracemalloc.o: ../source/tracelib/tracemalloc.c
+	$(CC) -c ../source/tracelib/tracemalloc.c -o ../source/tracelib/tracemalloc.o $(CFLAGS)
+
+../source/scriptlib/Instruction.o: ../source/scriptlib/Instruction.c
+	$(CC) -c ../source/scriptlib/Instruction.c -o ../source/scriptlib/Instruction.o $(CFLAGS)
+
+../source/scriptlib/Interpreter.o: ../source/scriptlib/Interpreter.c
+	$(CC) -c ../source/scriptlib/Interpreter.c -o ../source/scriptlib/Interpreter.o $(CFLAGS)
+
+../source/scriptlib/Lexer.o: ../source/scriptlib/Lexer.c
+	$(CC) -c ../source/scriptlib/Lexer.c -o ../source/scriptlib/Lexer.o $(CFLAGS)
+
+../source/scriptlib/List.o: ../source/scriptlib/List.c
+	$(CC) -c ../source/scriptlib/List.c -o ../source/scriptlib/List.o $(CFLAGS)
+
+../source/scriptlib/Parser.o: ../source/scriptlib/Parser.c
+	$(CC) -c ../source/scriptlib/Parser.c -o ../source/scriptlib/Parser.o $(CFLAGS)
+
+../source/scriptlib/ParserSet.o: ../source/scriptlib/ParserSet.c
+	$(CC) -c ../source/scriptlib/ParserSet.c -o ../source/scriptlib/ParserSet.o $(CFLAGS)
+
+../source/scriptlib/ScriptVariant.o: ../source/scriptlib/ScriptVariant.c
+	$(CC) -c ../source/scriptlib/ScriptVariant.c -o ../source/scriptlib/ScriptVariant.o $(CFLAGS)
+
+../source/scriptlib/Stack.o: ../source/scriptlib/Stack.c
+	$(CC) -c ../source/scriptlib/Stack.c -o ../source/scriptlib/Stack.o $(CFLAGS)
+
+../source/scriptlib/StackedSymbolTable.o: ../source/scriptlib/StackedSymbolTable.c
+	$(CC) -c ../source/scriptlib/StackedSymbolTable.c -o ../source/scriptlib/StackedSymbolTable.o $(CFLAGS)
+
+../source/scriptlib/SymbolTable.o: ../source/scriptlib/SymbolTable.c
+	$(CC) -c ../source/scriptlib/SymbolTable.c -o ../source/scriptlib/SymbolTable.o $(CFLAGS)
+
+../openborscript.o: ../openborscript.c
+	$(CC) -c ../openborscript.c -o ../openborscript.o $(CFLAGS)
+
+../source/gamelib/filters.o: ../source/gamelib/filters.c
+	$(CC) -c ../source/gamelib/filters.c -o ../source/gamelib/filters.o $(CFLAGS)
+
+../source/gamelib/spritef.o: ../source/gamelib/spritef.c
+	$(CC) -c ../source/gamelib/spritef.c -o ../source/gamelib/spritef.o $(CFLAGS)
+
+../source/gamelib/packfile.o: ../source/gamelib/packfile.c
+	$(CC) -c ../source/gamelib/packfile.c -o ../source/gamelib/packfile.o $(CFLAGS)
+
+../source/gamelib/filecache.o: ../source/gamelib/filecache.c
+	$(CC) -c ../source/gamelib/filecache.c -o ../source/gamelib/filecache.o $(CFLAGS)
+
+../source/stristr.o: ../source/stristr.c
+	$(CC) -c ../source/stristr.c -o ../source/stristr.o $(CFLAGS)
+
+../source/gamelib/draw32.o: ../source/gamelib/draw32.c
+	$(CC) -c ../source/gamelib/draw32.c -o ../source/gamelib/draw32.o $(CFLAGS)
+
+../source/gamelib/spritex8p32.o: ../source/gamelib/spritex8p32.c
+	$(CC) -c ../source/gamelib/spritex8p32.c -o ../source/gamelib/spritex8p32.o $(CFLAGS)
+
+../source/gamelib/screen32.o: ../source/gamelib/screen32.c
+	$(CC) -c ../source/gamelib/screen32.c -o ../source/gamelib/screen32.o $(CFLAGS)
+
+../source/gamelib/pixelformat.o: ../source/gamelib/pixelformat.c
+	$(CC) -c ../source/gamelib/pixelformat.c -o ../source/gamelib/pixelformat.o $(CFLAGS)
+
+../source/gamelib/texture32.o: ../source/gamelib/texture32.c
+	$(CC) -c ../source/gamelib/texture32.c -o ../source/gamelib/texture32.o $(CFLAGS)
+
+../source/gamelib/texture16.o: ../source/gamelib/texture16.c
+	$(CC) -c ../source/gamelib/texture16.c -o ../source/gamelib/texture16.o $(CFLAGS)
+
+../source/gamelib/draw16.o: ../source/gamelib/draw16.c
+	$(CC) -c ../source/gamelib/draw16.c -o ../source/gamelib/draw16.o $(CFLAGS)
+
+../source/gamelib/screen16.o: ../source/gamelib/screen16.c
+	$(CC) -c ../source/gamelib/screen16.c -o ../source/gamelib/screen16.o $(CFLAGS)
+
+../source/gamelib/spritex8p16.o: ../source/gamelib/spritex8p16.c
+	$(CC) -c ../source/gamelib/spritex8p16.c -o ../source/gamelib/spritex8p16.o $(CFLAGS)
+
+control.o: control.c
+	$(CC) -c control.c -o control.o $(CFLAGS)
+
+joysticks.o: joysticks.c
+	$(CC) -c joysticks.c -o joysticks.o $(CFLAGS)
+
+sblaster.o: sblaster.c
+	$(CC) -c sblaster.c -o sblaster.o $(CFLAGS)
+
+sdlport.o: sdlport.c
+	$(CC) -c sdlport.c -o sdlport.o $(CFLAGS)
+
+soundmix.o: soundmix.c
+	$(CC) -c soundmix.c -o soundmix.o $(CFLAGS)
+
+timer.o: timer.c
+	$(CC) -c timer.c -o timer.o $(CFLAGS)
+
+video.o: video.c
+	$(CC) -c video.c -o video.o $(CFLAGS)
+
+../source/gfxlib/simple2x.o: ../source/gfxlib/simple2x.c
+	$(CC) -c ../source/gfxlib/simple2x.c -o ../source/gfxlib/simple2x.o $(CFLAGS)
+
+../source/gfxlib/2xSaI.o: ../source/gfxlib/2xSaI.c
+	$(CC) -c ../source/gfxlib/2xSaI.c -o ../source/gfxlib/2xSaI.o $(CFLAGS)
+
+../source/gfxlib/bilinear.o: ../source/gfxlib/bilinear.c
+	$(CC) -c ../source/gfxlib/bilinear.c -o ../source/gfxlib/bilinear.o $(CFLAGS)
+
+../source/gfxlib/hq2x.o: ../source/gfxlib/hq2x.c
+	$(CC) -c ../source/gfxlib/hq2x.c -o ../source/gfxlib/hq2x.o $(CFLAGS)
+
+../source/gfxlib/motionblur.o: ../source/gfxlib/motionblur.c
+	$(CC) -c ../source/gfxlib/motionblur.c -o ../source/gfxlib/motionblur.o $(CFLAGS)
+
+../source/gfxlib/scale2x.o: ../source/gfxlib/scale2x.c
+	$(CC) -c ../source/gfxlib/scale2x.c -o ../source/gfxlib/scale2x.o $(CFLAGS)
+
+../source/gfxlib/scanline.o: ../source/gfxlib/scanline.c
+	$(CC) -c ../source/gfxlib/scanline.c -o ../source/gfxlib/scanline.o $(CFLAGS)
+
+../source/gfxlib/tv2x.o: ../source/gfxlib/tv2x.c
+	$(CC) -c ../source/gfxlib/tv2x.c -o ../source/gfxlib/tv2x.o $(CFLAGS)
+
+../source/gfxlib/dotmatrix.o: ../source/gfxlib/dotmatrix.c
+	$(CC) -c ../source/gfxlib/dotmatrix.c -o ../source/gfxlib/dotmatrix.o $(CFLAGS)
+
+../source/gfxlib/gfx.o: ../source/gfxlib/gfx.c
+	$(CC) -c ../source/gfxlib/gfx.c -o ../source/gfxlib/gfx.o $(CFLAGS)
+
+OpenBOR_private.res: OpenBOR_private.rc 
+	$(WINDRES) -i OpenBOR_private.rc --input-format=rc -o OpenBOR_private.res -O coff 
